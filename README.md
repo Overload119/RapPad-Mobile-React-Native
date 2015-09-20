@@ -2,9 +2,9 @@
 [![Dependency Status](https://david-dm.org/jhabdas/react-native-webpack-starter-kit.svg)](https://david-dm.org/jhabdas/react-native-webpack-starter-kit)
 [![devDependency Status](https://david-dm.org/jhabdas/react-native-webpack-starter-kit/dev-status.svg)](https://david-dm.org/jhabdas/react-native-webpack-starter-kit#info=devDependencies)
 
-A minimalist seed for building with React Native and Webpack.
+A minimalist seed for building with React Native and Webpack. Leverages [`react-native-webpack-server`](https://github.com/mjohnston/react-native-webpack-server). Follows the latest React Native stable release. For a list of awesome boilerplates for React Native please visit [Awesome React Boilerplates](http://habd.as/awesome-react-boilerplates/#react-native).
 
-For a list of awesome boilerplates for React Native please visit [Awesome React Boilerplates](http://habd.as/awesome-react-boilerplates/#react-native).
+For an example implementation check out [Lumpen Radio](https://github.com/jhabdas/lumpen-radio).
 
 ## Requirements
 
