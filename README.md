@@ -41,3 +41,14 @@ This will start a [Webpack Dev Server](react-native-webpack-starter-kit) which w
 Then open `ios/App.xcodeproj` in Xcode, build and run the project. For Android setup please see the official [Android Setup](http://facebook.github.io/react-native/docs/android-setup.html#content) documentation.
 
 If you run into any issues please see the [Getting Started](http://facebook.github.io/react-native/docs/getting-started.html) guide for React Native before submitting an issue.
+
+### Bundling for distribution
+
+Similar to the [standard React Native packager](https://facebook.github.io/react-native/docs/running-on-device-ios.html#using-offline-bundle), you can generate an offline JS bundle to use your app without a development server:
+
+```shell
+react-native-webpack-server bundle
+
+# OR, using the above package.json script:
+npm run bundle
+```
