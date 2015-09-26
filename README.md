@@ -42,13 +42,10 @@ Then open `ios/App.xcodeproj` in Xcode, build and run the project. For Android s
 
 If you run into any issues please see the [Getting Started](http://facebook.github.io/react-native/docs/getting-started.html) guide for React Native before submitting an issue.
 
-### Bundling for distribution
+## Bundling for distribution
 
-Similar to the [standard React Native packager](https://facebook.github.io/react-native/docs/running-on-device-ios.html#using-offline-bundle), you can generate an offline JS bundle to use your app without a development server:
+1. Execute `npm run bundle` to generate the [offline JS bundle](https://facebook.github.io/react-native/docs/running-on-device-ios.html#using-offline-bundle).
+2. For iOS, update `AppDelegate.m` to load from pre-bundled file on disk.
+3. Test the application, create an archive and submit to the store.
 
-```shell
-react-native-webpack-server bundle
-
-# OR, using the above package.json script:
-npm run bundle
-```
+Learn more about [Submitting to App Store](http://habd.as/reflecting-on-react-native-development/#submitting-to-app-store).
