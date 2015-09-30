@@ -19,16 +19,6 @@ module.exports = {
         test: /\.(js|jsx|es6)$/,
         exclude: /node_modules/,
         loaders: ['babel-loader?optional=runtime']
-      },
-      {
-        test: /\.js$/,
-        include: /node_modules\/react-native-video/,
-        loaders: ['babel-loader?optional=es7.objectRestSpread']
-      },
-      {
-        test: /\.js$/,
-        include: /node_modules\/react-native-localization/,
-        loaders: ['babel-loader?optional=runtime']
       }
     ]
   },
