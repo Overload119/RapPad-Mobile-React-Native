@@ -18,7 +18,10 @@ module.exports = {
       {
         test: /\.(js|jsx|es6)$/,
         exclude: /node_modules/,
-        loaders: ['babel-loader?optional=runtime']
+        loader: ['babel-loader'],
+        query: {
+          optional: 'runtime'
+        }
       }
     ]
   },
