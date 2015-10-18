@@ -20,7 +20,7 @@ For an example implementation check out [Lumpen Radio](https://github.com/jhabda
 
 ## Installation
 
-Strat by cloning this repo and installing dependencies:
+Start by cloning this repo and installing dependencies:
 
 ```sh
 git clone https://github.com/jhabdas/react-native-webpack-starter-kit.git
