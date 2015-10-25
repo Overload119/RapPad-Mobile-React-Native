@@ -1,6 +1,7 @@
 # react-native-webpack-starter-kit
 [![Dependency Status](https://david-dm.org/jhabdas/react-native-webpack-starter-kit.svg)](https://david-dm.org/jhabdas/react-native-webpack-starter-kit)
 [![devDependency Status](https://david-dm.org/jhabdas/react-native-webpack-starter-kit/dev-status.svg)](https://david-dm.org/jhabdas/react-native-webpack-starter-kit#info=devDependencies)
+[![Contact me on Codementor](https://cdn.codementor.io/badges/contact_me_github.svg)](https://www.codementor.io/jhabdas?utm_source=github&utm_medium=button&utm_term=jhabdas&utm_campaign=github)
 
 A minimalist seed for building with React Native and Webpack. Leverages [`react-native-webpack-server`](https://github.com/mjohnston/react-native-webpack-server). Follows the latest React Native stable release. For a list of awesome boilerplates for React Native please visit [Awesome React Boilerplates](http://habd.as/awesome-react-boilerplates/#react-native).
 
