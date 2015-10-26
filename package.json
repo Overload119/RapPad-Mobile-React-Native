@@ -4,7 +4,13 @@
   "private": true,
   "scripts": {
     "bundle": "react-native-webpack-server bundle",
-    "start": "react-native-webpack-server start"
+    "start": "react-native-webpack-server start",
+    "start-android-webpack-server": "react-native-webpack-server start -e index.android -P 9090 -p 9091 -w 9092",
+    "install-app-to-android-device": "cd android && ./gradlew installDebug",
+    "setup-reverse-tcp-for-android-device": "adb reverse tcp:8081 tcp:9090",
+    "launch-android-app-on-device": "cd android && adb shell am start -n com.\"$npm_package_name\"/.MainActivity",
+    "android": "npm run-script setup-reverse-tcp-for-android-device && npm run-script install-app-to-android-device && npm run-script launch-android-app-on-device && echo \"Please Reload JS on the app from the menu after the webpack server starts below\" && npm run-script start-android-webpack-server"
+
   },
   "dependencies": {
     "react-native": "^0.13.0"

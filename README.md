@@ -39,7 +39,9 @@ npm start # or: node node_modules/.bin/react-native-webpack-server start
 
 This will start a [Webpack Dev Server](react-native-webpack-starter-kit) which will watch your JS files for changes and automatically generate the `index.[platform].js` file expected by your app.
 
-Then open `ios/App.xcodeproj` in Xcode, build and run the project. For Android setup please see the official [Android Setup](http://facebook.github.io/react-native/docs/android-setup.html#content) documentation. Here's a workaround to get [device debugging on Android](https://github.com/mjohnston/react-native-webpack-server/issues/65#issuecomment-149597280) working with the Webpack Dev Server.
+Then open `ios/App.xcodeproj` in Xcode, build and run the project.
+
+For Android setup please see the official [Android Setup](http://facebook.github.io/react-native/docs/android-setup.html#content) documentation. Here's a workaround to get [device debugging on Android](https://github.com/mjohnston/react-native-webpack-server/issues/65#issuecomment-149597280) working with the Webpack Dev Server. Please see `package.json` for a listing of useful scripts to help get you going thanks to [@niftylettuce](https://github.com/niftylettuce). And here's some [info on script usage](https://github.com/mjohnston/react-native-webpack-server/issues/65#issuecomment-151222398).
 
 If you run into any issues please see the [Getting Started](http://facebook.github.io/react-native/docs/getting-started.html) guide for React Native before submitting an issue.
 
