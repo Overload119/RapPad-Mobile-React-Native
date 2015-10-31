@@ -1,10 +1,11 @@
+'use strict';
+
 var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
   debug: true,
   devtool: 'source-map',
-  watch: true,
   entry: {
     'index.ios': ['./src/main.ios.js'],
     'index.android': ['./src/main.android.js'],
@@ -25,8 +26,7 @@ module.exports = {
       }
     ]
   },
-  resolve: { extensions: ['', '.js', '.jsx', '.es6'] },
   plugins: [
     new webpack.NoErrorsPlugin(),
-  ],
+  ]
 };
