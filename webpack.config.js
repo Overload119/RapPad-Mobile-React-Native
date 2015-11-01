@@ -19,9 +19,9 @@ module.exports = {
       {
         test: /\.(js|jsx|es6)$/,
         exclude: /node_modules/,
-        loader: ['babel-loader'],
+        loader: 'babel',
         query: {
-          optional: 'runtime'
+          presets: ['react', 'es2015']
         }
       }
     ]
