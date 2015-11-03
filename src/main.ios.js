@@ -1,19 +1,18 @@
 /**
- * Sample React Native App
+ * Sample React Native App ported to ES6
  * https://github.com/facebook/react-native
  */
-'use strict';
+import React, { Component } from 'react-native';
 
-var React = require('react-native');
-var {
+let {
   AppRegistry,
   StyleSheet,
   Text,
   View,
 } = React;
 
-var App = React.createClass({
-  render: function() {
+class App extends Component {
+  render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
@@ -29,9 +28,9 @@ var App = React.createClass({
       </View>
     );
   }
-});
+}
 
-var styles = StyleSheet.create({
+let styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',

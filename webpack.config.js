@@ -15,6 +15,13 @@ module.exports = {
     filename: '[name].js',
   },
   module: {
+    preLoaders: [
+      {
+        test: /\.(js|jsx|es6)$/,
+        include: path.resolve(__dirname, 'src'),
+        loader: "eslint-loader"
+      }
+    ],
     loaders: [
       {
         test: /\.(js|jsx|es6)$/,
@@ -25,8 +32,5 @@ module.exports = {
         }
       }
     ]
-  },
-  plugins: [
-    new webpack.NoErrorsPlugin(),
-  ]
+  }
 };
