@@ -1,3 +1,7 @@
+/**
+ * Sample React Native App ported to ES6
+ * https://github.com/facebook/react-native
+ */
 import React, { Component } from 'react-native';
 
 let {
