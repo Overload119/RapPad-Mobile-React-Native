@@ -3,9 +3,9 @@
 [![Dependency Status](https://david-dm.org/jhabdas/react-native-webpack-starter-kit.svg)](https://david-dm.org/jhabdas/react-native-webpack-starter-kit)
 [![devDependency Status](https://david-dm.org/jhabdas/react-native-webpack-starter-kit/dev-status.svg)](https://david-dm.org/jhabdas/react-native-webpack-starter-kit#info=devDependencies)
 
-A minimalist seed for building with React Native and Webpack using ES6. Leverages [`react-native-webpack-server`](https://github.com/mjohnston/react-native-webpack-server). Incorporates sane linting rules with ESLint. And follows the latest React Native stable release.
+A minimalist seed for building with React Native and Webpack using ES6. Leverages [`react-native-webpack-server`](https://github.com/mjohnston/react-native-webpack-server). Incorporates sane linting rules for React Native with ESLint. Follows the latest React Native stable release.
 
-For an example implementation check out [Lumpen Radio](https://github.com/jhabdas/lumpen-radio). And a list of awesome starter kits for React Native please visit [Awesome React Boilerplates](http://habd.as/awesome-react-boilerplates/#react-native).
+For an example implementation check out [Lumpen Radio](https://github.com/jhabdas/lumpen-radio). Or check out some other [Awesome React Boilerplates](http://habd.as/awesome-react-boilerplates/#react-native).
 
 ## Requirements
 
