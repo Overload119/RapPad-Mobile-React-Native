@@ -10,9 +10,10 @@ For an example implementation check out [Lumpen Radio](https://github.com/jhabda
 ## Requirements
 
 - [Node](https://nodejs.org) 4.x or better
-- [Xcode](https://developer.apple.com/xcode/) for iOS development
-- [Android SDK](https://developer.android.com/sdk/) for Android development
-- [Android Lollipop](https://www.android.com/versions/lollipop-5-0/) or better for Android device testing
+- [React Native](http://facebook.github.io/react-native/docs/getting-started.html) for development
+- [Xcode](https://developer.apple.com/xcode/) for iOS development (optional)
+- [Android SDK](https://developer.android.com/sdk/) for Android development (optional)
+- [Android Lollipop](https://www.android.com/versions/lollipop-5-0/) or better for Android device testing (optional)
 
 ## Stack
 
