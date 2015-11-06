@@ -29,6 +29,7 @@ Start by cloning this repo and installing dependencies:
 git clone https://github.com/jhabdas/react-native-webpack-starter-kit.git
 cd react-native-webpack-starter-kit
 npm install # Install Node.js dependencies listed in ./package.json
+npm un -D react-native-webpack-server && npm i -D react-native-webpack-server # Workaround for NPM install issue
 ```
 
 ## Running
