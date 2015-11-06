@@ -2,6 +2,7 @@
 
 [![Dependency Status](https://david-dm.org/jhabdas/react-native-webpack-starter-kit.svg)](https://david-dm.org/jhabdas/react-native-webpack-starter-kit)
 [![devDependency Status](https://david-dm.org/jhabdas/react-native-webpack-starter-kit/dev-status.svg)](https://david-dm.org/jhabdas/react-native-webpack-starter-kit#info=devDependencies)
+[![Tips](http://img.shields.io/gratipay/jhabdas.svg)](https://gratipay.com/jhabdas)
 
 A minimalist boilerplate for starting React Native apps with Webpack and ES6 using Babel. Leverages [`react-native-webpack-server`](https://github.com/mjohnston/react-native-webpack-server). Incorporates sane linting rules for React Native with ESLint. Follows the latest React Native stable release.
 

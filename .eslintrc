@@ -12,7 +12,7 @@
     "quotes": [2, "single"],
     "linebreak-style": [2, "unix"],
     "semi": [2, "always"],
-    "comma-dangle": [2, "always-multiline"],
+    "comma-dangle": [1, "always-multiline"],
     "constructor-super": 2,
     "no-arrow-condition": 2,
     "no-class-assign": 2,
