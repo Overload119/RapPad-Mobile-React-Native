@@ -29,8 +29,8 @@ Start by cloning this repo and installing dependencies:
 ```sh
 git clone https://github.com/jhabdas/react-native-webpack-starter-kit.git
 cd react-native-webpack-starter-kit
-npm install # Install Node.js dependencies listed in ./package.json
-npm un -D react-native-webpack-server && npm i -D react-native-webpack-server # Workaround for NPM install issue
+npm install
+npm un -D react-native-webpack-server && npm i -D react-native-webpack-server
 ```
 
 ## Running
@@ -38,7 +38,7 @@ npm un -D react-native-webpack-server && npm i -D react-native-webpack-server # 
 Once dependencies are installed, start the application with:
 
 ```sh
-npm start # or: node node_modules/.bin/rnws
+npm start
 ```
 
 This will start a [Webpack Dev Server](https://github.com/webpack/webpack-dev-server) which will watch your JS files for changes and automatically generate the `index.[platform].js` file expected by your React Native iOS or Android app.
