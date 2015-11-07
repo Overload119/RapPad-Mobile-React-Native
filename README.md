@@ -58,7 +58,7 @@ npm run android-setup-port
 react-native run-android
 ```
 
-Note Android support in React Native is relatively new, so expect some hiccups. Please see the official [Android Setup](http://facebook.github.io/react-native/docs/android-setup.html#content) documentation for getting set-up and additional information. And here's some [helpful npm scripts](https://github.com/mjohnston/react-native-webpack-server/issues/65#issuecomment-151222398) courtesy of [@niftylettuce](https://github.com/niftylettuce).
+Note Android support in React Native is relatively new, so expect some hiccups. Please see the official [Android Setup](http://facebook.github.io/react-native/docs/android-setup.html#content) documentation for getting set-up and the [`README` in RNWS](https://github.com/mjohnston/react-native-webpack-server/blob/27218e70f655983aff99a8a31d258eda5254aaf6/README.md) for additional information. And here's some [helpful npm scripts](https://github.com/mjohnston/react-native-webpack-server/issues/65#issuecomment-151222398) courtesy of [@niftylettuce](https://github.com/niftylettuce).
 
 If you run into any issues please see the [Getting Started](http://facebook.github.io/react-native/docs/getting-started.html) guide for React Native before submitting an issue.
 

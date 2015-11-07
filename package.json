@@ -9,7 +9,7 @@
     "start": "rnws start"
   },
   "dependencies": {
-    "react-native": "^0.13.2"
+    "react-native": "0.13 - 0.14"
   },
   "devDependencies": {
     "babel-core": "^6.1.2",
