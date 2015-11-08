@@ -8,6 +8,10 @@
     "test": "eslint src",
     "start": "rnws start"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhabdas/react-native-webpack-starter-kit"
+  },
   "dependencies": {
     "react-native": "0.13 - 0.14"
   },
@@ -24,5 +28,6 @@
     "react-native-webpack-server": "^0.8.0",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.1"
-  }
+  },
+  "license": "MIT"
 }
