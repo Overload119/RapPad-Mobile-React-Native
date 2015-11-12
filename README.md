@@ -75,6 +75,6 @@ Building the app for distribution.
 2. For iOS, update `AppDelegate.m` to load from pre-bundled file on disk.
 3. Test the application, create an archive and submit to the store.
 
-## Submitting to App Store
+## Submitting to Store
 
-Please see [Submitting to App Store](http://habd.as/reflecting-on-react-native-development/#submitting-to-app-store). If you'd like help getting your app in the store I'm [available for booking](https://www.codementor.io/jhabdas) on Codementor.
+Please see [Submitting to App Store](http://habd.as/reflecting-on-react-native-development/#submitting-to-app-store) for instructions on iOS. If you have any good Android instructions, please send a PR this way. Good luck and have fun out there!
