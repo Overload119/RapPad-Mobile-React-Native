@@ -1,7 +1,7 @@
 {
   "name": "App",
-  "version": "0.0.1",
-  "private": true,
+  "version": "1.15.1",
+  "author": "Josh Habdas <jhabdas@gmail.com> (http://habd.as)",
   "scripts": {
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
     "bundle": "rnws bundle",
