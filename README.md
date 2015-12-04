@@ -4,7 +4,7 @@
 [![devDependency Status](https://david-dm.org/jhabdas/react-native-webpack-starter-kit/dev-status.svg)](https://david-dm.org/jhabdas/react-native-webpack-starter-kit#info=devDependencies)
 [![Build Status](https://travis-ci.org/jhabdas/react-native-webpack-starter-kit.svg?branch=master)](https://travis-ci.org/jhabdas/react-native-webpack-starter-kit)
 
-A minimalist boilerplate for starting React Native apps with Webpack and ES6/7 using Babel. Leverages [`react-native-webpack-server`](https://github.com/mjohnston/react-native-webpack-server). Incorporates sane linting rules for React Native with ESLint. Follows the latest React Native stable release. Leverages [Greenkeeper](https://github.com/greenkeeperio/greenkeeper) to help keep dependencies fresh.
+A minimalist boilerplate for starting React Native apps with Webpack and ES6/7 using Babel. Leverages [`react-native-webpack-server`](https://github.com/mjohnston/react-native-webpack-server). Incorporates sane linting rules for React Native with ESLint. Follows the latest React Native stable release. Uses [Greenkeeper](https://github.com/greenkeeperio/greenkeeper) to help keep dependencies fresh. [EditorConfig](http://editorconfig.org/) is also provided to help code consistency.
 
 For an example implementation check out [Lumpen Radio](https://github.com/jhabdas/lumpen-radio). Or check out some other [Awesome React Boilerplates](http://habd.as/awesome-react-boilerplates/#react-native).
 
