@@ -25,7 +25,7 @@
     "eslint": "^1.10.3",
     "eslint-loader": "^1.1.1",
     "eslint-plugin-react": "^3.11.2",
-    "react-native-webpack-server": "^0.8.2-rc",
+    "react-native-webpack-server": "^0.8.2",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
