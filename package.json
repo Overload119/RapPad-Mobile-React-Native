@@ -1,6 +1,6 @@
 {
   "name": "App",
-  "version": "1.15.1",
+  "version": "1.16.1",
   "author": "Josh Habdas <jhabdas@gmail.com> (http://habd.as)",
   "scripts": {
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
@@ -13,7 +13,7 @@
     "url": "https://github.com/jhabdas/react-native-webpack-starter-kit"
   },
   "dependencies": {
-    "react-native": "0.15.0"
+    "react-native": "0.16.0"
   },
   "devDependencies": {
     "babel-core": "^6.2.1",
