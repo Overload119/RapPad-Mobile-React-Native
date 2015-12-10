@@ -3,7 +3,7 @@
 [![Dependency Status](https://david-dm.org/jhabdas/react-native-webpack-starter-kit.svg)](https://david-dm.org/jhabdas/react-native-webpack-starter-kit)
 [![devDependency Status](https://david-dm.org/jhabdas/react-native-webpack-starter-kit/dev-status.svg)](https://david-dm.org/jhabdas/react-native-webpack-starter-kit#info=devDependencies)
 [![Build Status](https://travis-ci.org/jhabdas/react-native-webpack-starter-kit.svg?branch=master)](https://travis-ci.org/jhabdas/react-native-webpack-starter-kit)
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://github.com/jhabdas/react-native-webpack-starter-kit)
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/jhabdas/react-native-webpack-starter-kit)
 
 The future-facing starter kit for React Native apps. A minimalist boilerplate using Webpack for ES2015 and ES2016 using Babel. Leverages [`react-native-webpack-server`](https://github.com/mjohnston/react-native-webpack-server). Incorporates sane linting rules for React Native with ESLint. Follows the latest React Native stable release. Uses [Greenkeeper](https://github.com/greenkeeperio/greenkeeper) to help keep dependencies fresh. [EditorConfig](http://editorconfig.org/) is also provided to help code consistency.
 
