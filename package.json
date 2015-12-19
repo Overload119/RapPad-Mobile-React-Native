@@ -1,7 +1,9 @@
 {
   "name": "App",
-  "version": "1.16.1",
+  "version": "1.17.0",
+  "description": "A future-facing starter kit for React Native apps.",
   "author": "Josh Habdas <jhabdas@gmail.com> (http://habd.as)",
+  "license": "MIT",
   "scripts": {
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
     "bundle": "rnws bundle",
@@ -12,22 +14,24 @@
     "type": "git",
     "url": "https://github.com/jhabdas/react-native-webpack-starter-kit"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "dependencies": {
     "react-native": "0.17.0"
   },
   "devDependencies": {
     "babel-core": "^6.3.17",
-    "babel-eslint": "^4.1.6",
+    "babel-eslint": "^5.0.0-beta6",
     "babel-loader": "^6.2.0",
-    "babel-preset-es2015": "^6.1.18",
-    "babel-preset-react": "^6.1.18",
-    "babel-preset-stage-1": "^6.1.18",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-1": "^6.3.13",
     "eslint": "^1.10.3",
     "eslint-loader": "^1.1.1",
     "eslint-plugin-react": "^3.11.2",
     "react-native-webpack-server": "^0.8.2",
-    "webpack": "^1.12.9",
+    "webpack": "^2.0.1-beta",
     "webpack-dev-server": "^1.14.0"
-  },
-  "license": "MIT"
+  }
 }
