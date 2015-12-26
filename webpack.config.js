@@ -1,3 +1,7 @@
+/**
+ * React Native Webpack Starter Kit
+ * https://github.com/jhabdas/react-native-webpack-starter-kit
+ */
 (function() {
   'use strict';
 
