@@ -19,9 +19,7 @@
     "npm": ">=2 <4"
   },
   "dependencies": {
-    "react-native": "^0.17.0",
-    "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
+    "react-native": "^0.17.0"
   },
   "devDependencies": {
     "babel-core": "^6.3.17",
@@ -34,5 +32,7 @@
     "eslint-loader": "^1.1.1",
     "eslint-plugin-react": "^3.11.2",
     "react-native-webpack-server": "^0.8.3"
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
   }
 }
