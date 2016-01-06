@@ -1,0 +1,1870 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"twitter",
+				"twitter_followers"
+			],
+			[
+				"totalC",
+				"totalCounts"
+			],
+			[
+				"ajaxP",
+				"ajaxPullData"
+			],
+			[
+				"compon",
+				"componentDidMount	(user_charts_graph.jsx.coffee)"
+			],
+			[
+				"facebook",
+				"facebookCounts"
+			],
+			[
+				"soundl",
+				"soundcloudCounts"
+			],
+			[
+				"counts",
+				"countsWithData"
+			],
+			[
+				"option",
+				"optionValue"
+			],
+			[
+				"download",
+				"download_url"
+			],
+			[
+				"add_",
+				"add_column	(20151231153250_add_uncommon_word_to_rhyme_set_gram.rb)"
+			],
+			[
+				"unusu",
+				"unusual_words"
+			],
+			[
+				"getUser",
+				"getUserMedia"
+			],
+			[
+				"SCUpload",
+				"SCUploadLoaded"
+			],
+			[
+				"handl",
+				"handleClickUpload"
+			],
+			[
+				"isSound",
+				"isSoundcloudAuthenticated"
+			],
+			[
+				"isSoun",
+				"isSoundcloudAuthenticated"
+			],
+			[
+				"elapsed",
+				"elapsedMs"
+			],
+			[
+				"componentDid",
+				"componentDidMount	(lyrics_editor.jsx.coffee)"
+			],
+			[
+				"impress",
+				"impression_type	(impressions_controller.rb)"
+			],
+			[
+				"attachme",
+				"attachment_type"
+			],
+			[
+				"handleCLickS",
+				"handleClickShare"
+			],
+			[
+				"redriec",
+				"redirect_to"
+			],
+			[
+				"default",
+				"defaultTextValue"
+			],
+			[
+				"defau",
+				"defaultTextValue"
+			],
+			[
+				"defal",
+				"defaultTextValue"
+			],
+			[
+				"defa",
+				"defaultTextValue"
+			],
+			[
+				"click",
+				"clickable	(main.css.sass)"
+			],
+			[
+				"wordAv",
+				"wordAvgFreq"
+			],
+			[
+				"candi",
+				"candidate_hsh"
+			],
+			[
+				"phonem",
+				"phonemes"
+			],
+			[
+				"seen",
+				"seen_words"
+			],
+			[
+				"candida",
+				"candidate_hsh"
+			],
+			[
+				"vowel_phon",
+				"vowel_phoneme"
+			],
+			[
+				"cand",
+				"candidate_hsh"
+			],
+			[
+				"vowel_ph",
+				"vowel_phonemes_ary"
+			],
+			[
+				"phon",
+				"phonemes"
+			],
+			[
+				"yt_video",
+				"yt_video_id"
+			],
+			[
+				"external",
+				"external_id"
+			],
+			[
+				"exteranl",
+				"external_id"
+			],
+			[
+				"isLoadin",
+				"isLoadingFeedbackForm"
+			],
+			[
+				"isLo",
+				"isLoadingFeedbackForm"
+			],
+			[
+				"feedbacD",
+				"feedbackData"
+			],
+			[
+				"feedback",
+				"feedbackDisabled"
+			],
+			[
+				"feedabc",
+				"feedbackData"
+			],
+			[
+				"loadAndP",
+				"loadAndPlayCurrentTrack"
+			],
+			[
+				"trending",
+				"trending_rap_ids"
+			],
+			[
+				"ignoreRap",
+				"ignoreRapID"
+			],
+			[
+				"ignore",
+				"ignore_ids"
+			],
+			[
+				"enque",
+				"enqueue_at"
+			],
+			[
+				"frequ",
+				"frequency"
+			],
+			[
+				"candid",
+				"candidate_hsh"
+			],
+			[
+				"frequency",
+				"frequency_score"
+			],
+			[
+				"rhyming",
+				"rhyming_lines"
+			],
+			[
+				"default_",
+				"has_default_username"
+			],
+			[
+				"curre",
+				"currentRapIdx"
+			],
+			[
+				"ajax",
+				"ajaxCheckIfPropped"
+			],
+			[
+				"proppabl",
+				"proppableId"
+			],
+			[
+				"notifi",
+				"notifications"
+			],
+			[
+				"feature",
+				"featured	(featured.rb)"
+			],
+			[
+				"promoted",
+				"promoted_raps"
+			],
+			[
+				"compoent",
+				"componentWillUnmount	(user_profile_tabs.jsx.coffee)"
+			],
+			[
+				"Prop",
+				"PropTypes"
+			],
+			[
+				"loaded",
+				"loadedComments"
+			],
+			[
+				"renderl",
+				"renderLyricLine"
+			],
+			[
+				"mem",
+				"member_since	(_explore_featured_payload.json.jbuilder)"
+			],
+			[
+				"annot",
+				"annotation_regx"
+			],
+			[
+				"rquire",
+				"required"
+			],
+			[
+				"exist",
+				"existing_beat"
+			],
+			[
+				"cure",
+				"current_user"
+			],
+			[
+				"das",
+				"dashboardPath	(route_helper.coffee)"
+			],
+			[
+				"nora",
+				"normalize_url	(youtube_beat.rb)"
+			],
+			[
+				"indic",
+				"indicatorClasses"
+			],
+			[
+				"Youtube",
+				"YoutubeBeat	(youtube_beat.rb)"
+			],
+			[
+				"artow",
+				"artwork_url	(rap.rb)"
+			],
+			[
+				"handleCHange",
+				"handleChangeURL"
+			],
+			[
+				"isLoading",
+				"isLoadingURL"
+			],
+			[
+				"soundc",
+				"soundcloud_authenticated"
+			],
+			[
+				"dashboard",
+				"dashboard_path"
+			],
+			[
+				"redirect",
+				"redirect_uri"
+			],
+			[
+				"soundcloud",
+				"soundcloud_access_token	(user.rb)"
+			],
+			[
+				"discussio",
+				"discussion_path"
+			],
+			[
+				"Youtub",
+				"YoutubeBeat"
+			],
+			[
+				"soundclou",
+				"soundcloud_api_key	(migrate_producer_soundcloud.rb)"
+			],
+			[
+				"create_rece",
+				"create_receive_rap_comment_v2"
+			],
+			[
+				"attac",
+				"attachment"
+			],
+			[
+				"create_recei",
+				"create_receive_rap_comment	(notification.rb)"
+			],
+			[
+				"attach",
+				"attachment_type	(20151211001641_create_muut_posts.rb)"
+			],
+			[
+				"user-block",
+				"user-block-image"
+			],
+			[
+				"attahce",
+				"attachment_type"
+			],
+			[
+				"notific",
+				"notification_type"
+			],
+			[
+				"potent",
+				"potential_ids"
+			],
+			[
+				"random",
+				"random_beats	(freestyle_controller.rb)"
+			],
+			[
+				"hosted_beat",
+				"hosted_beat_store"
+			],
+			[
+				"renderAlbum",
+				"renderAlbumItem"
+			],
+			[
+				"isProp",
+				"isPropLoading"
+			],
+			[
+				"previous",
+				"previousIds"
+			],
+			[
+				"loadAn",
+				"loadAndPlayCurrentTrack"
+			],
+			[
+				"handle",
+				"handleClickPlay"
+			],
+			[
+				"vertica",
+				"vertical-align"
+			],
+			[
+				"progress",
+				"progressWidth"
+			],
+			[
+				"loadA",
+				"loadAndPlayCurrentTrack"
+			],
+			[
+				"user_vote",
+				"user_voted_for_any"
+			],
+			[
+				"user_voted",
+				"user_voted_for_rap"
+			],
+			[
+				"cypher_user_votes",
+				"cypher_user_votes_key"
+			],
+			[
+				"previou",
+				"previousRap"
+			],
+			[
+				"loadAndPL",
+				"loadAndPlayPreviousSong"
+			],
+			[
+				"handleCLick",
+				"handleClickNext"
+			],
+			[
+				"previ",
+				"previousRapIds"
+			],
+			[
+				"colmun",
+				"column_node"
+			],
+			[
+				"recent_",
+				"recent_battles_key	(battle_propose.rb)"
+			],
+			[
+				"dropbox_",
+				"dropbox_callback"
+			],
+			[
+				"user_to",
+				"user_to_follow"
+			],
+			[
+				"play",
+				"playlist	(show.html.slim)"
+			],
+			[
+				"sc_user",
+				"sc_user_id"
+			],
+			[
+				"curren",
+				"current_year"
+			],
+			[
+				"recipient",
+				"recipient_id"
+			],
+			[
+				"recipi",
+				"recipient_id"
+			],
+			[
+				"incoming",
+				"incoming_messages_ids_by_sender_id"
+			],
+			[
+				"current_sign",
+				"current_sign_in_ip	(user.rb)"
+			],
+			[
+				"handleClick",
+				"handleClickBeatItem"
+			],
+			[
+				"pollB",
+				"pollBlueprintTimer"
+			],
+			[
+				"verified",
+				"verifiedProducersPath	(route_helper.coffee)"
+			],
+			[
+				"perfor",
+				"performedSearched"
+			],
+			[
+				"best_tag",
+				"best_tag_slugs"
+			],
+			[
+				"trendingea",
+				"trendingBeatsComponent"
+			],
+			[
+				"multiRhyme",
+				"multiRhymeQuery"
+			],
+			[
+				"error",
+				"errorMessage"
+			],
+			[
+				"ajx",
+				"ajaxRhymeType"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 1025,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 71.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"compile ",
+				"Coffee: Fast Compile"
+			],
+			[
+				"intent",
+				"Indent Respectful Sort: Indented by 2 Spaces"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"sort",
+				"Indent Respectful Sort: Indented by 2 Spaces"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove p",
+				"Package Control: Remove Package"
+			],
+			[
+				"Res",
+				"Indent Respectful Sort: Indented by 2 Spaces & Max Depth = 2"
+			],
+			[
+				"indent",
+				"Indent Respectful Sort: Indented by 2 Spaces"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal pa",
+				"Package Control: Install Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"codeintel",
+				"SublimeCodeIntel: Dump Import Directories"
+			],
+			[
+				"relo",
+				"Project: Refresh Folders"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"List Pac",
+				"Package Control: List Packages"
+			],
+			[
+				"css",
+				"Run CSScomb"
+			],
+			[
+				"run",
+				"Run CSScomb"
+			],
+			[
+				"css com",
+				"Run CSScomb"
+			],
+			[
+				"coffe",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"coffee",
+				"Coffee: Check Syntax"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"INstall",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"sublime lint",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"Remove Pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"Lint Mode",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"List pak",
+				"Package Control: List Packages"
+			],
+			[
+				"Debug Mod",
+				"SublimeLinter: Enable Debug Mode"
+			],
+			[
+				"show err",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"l",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"lint this",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"togg",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"toggle lin",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"lintt hi",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"lint this ",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"lint",
+				"SublimeLinter: Report (Open Files)"
+			],
+			[
+				"linter",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"toggle lint",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"lint mo",
+				"SublimeLinter: Choose Mark Style"
+			],
+			[
+				"linter mode",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"Lint",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: list pac",
+				"Package Control: List Packages"
+			],
+			[
+				"preview",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"coffpr",
+				"Coffee: Display Parse Tree"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"github",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"preview github",
+				"Markdown Preview: Github Flavored Markdown: Copy to Clipboard"
+			],
+			[
+				"view",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"export",
+				"Markdown Preview: Github Flavored Markdown: Export HTML in Sublime Text"
+			],
+			[
+				"cheat ",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"markdown set",
+				"Preferences: MarkdownEditing Settings – User"
+			],
+			[
+				"mark previ",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"mark preview",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"markd pre",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"markd",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"markdow",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"markdo",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"Package Control: upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Markdown e",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"Markdown",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"Package Control: install a ",
+				"Package Control: Install Package"
+			],
+			[
+				"browse ",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control:remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"lin",
+				"SublimeLint: Report (Open Files)"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 581.0
+	},
+	"console":
+	{
+		"height": 653.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/amirsharif/mobile-rappad"
+	],
+	"file_history":
+	[
+		"/Users/amirsharif/mobile-rappad/node_modules/react-native/node_modules/yeoman-generator/node_modules/cli-table/node_modules/colors/ReadMe.md",
+		"/Users/amirsharif/mobile-rappad/.gitignore",
+		"/Users/amirsharif/rappad/app/assets/javascripts/beats/soundcloud_engine.coffee",
+		"/Users/amirsharif/rappad/app/services/raps/rap_save.rb",
+		"/Users/amirsharif/rappad/app/views/rap/show.html.slim",
+		"/Users/amirsharif/rappad/app/views/beats/show.html.slim",
+		"/Users/amirsharif/rappad/app/assets/javascripts/components/rap_submission_form.jsx.coffee",
+		"/Users/amirsharif/rappad/app/views/common/_facebook_like_bar.slim",
+		"/Users/amirsharif/rappad/app/assets/javascripts/components/editor/soundcloud_recorder.jsx.coffee",
+		"/Users/amirsharif/rappad/app/views/user/_dashboard_community_card.slim",
+		"/Users/amirsharif/rappad/app/jobs/weekly_digest_job.rb",
+		"/Users/amirsharif/rappad/app/views/user/_net_ego.slim",
+		"/Users/amirsharif/rappad/app/views/devise/registrations/edit.html.slim",
+		"/Users/amirsharif/rappad/db/migrate/20130321013014_create_props.rb",
+		"/Users/amirsharif/rappad/app/controllers/home_controller.rb",
+		"/Users/amirsharif/rappad/app/views/notification_mailer/_weekly_digest_props.slim",
+		"/Users/amirsharif/rappad/app/models/growth_tracker.rb",
+		"/Users/amirsharif/rappad/app/views/notification_mailer/weekly_digest.slim",
+		"/Users/amirsharif/rappad/app/assets/javascripts/control_panel.coffee",
+		"/Users/amirsharif/rappad/app/assets/javascripts/charts.jsx.coffee",
+		"/Users/amirsharif/rappad/app/assets/javascripts/components/charts/user_charts.jsx.coffee",
+		"/Users/amirsharif/rappad/app/controllers/api/beats_controller.rb",
+		"/Users/amirsharif/rappad/config/routes.rb",
+		"/Users/amirsharif/rappad/app/assets/javascripts/beats/beat.coffee",
+		"/Users/amirsharif/rappad/app/jobs/soundcloud_user_like_job.rb",
+		"/Users/amirsharif/rappad/app/views/home/search.slim",
+		"/Users/amirsharif/rappad/app/controllers/admin_controller.rb",
+		"/Users/amirsharif/rappad/app/views/dialogs/beat.slim",
+		"/Users/amirsharif/rappad/app/assets/javascripts/dialogs.jsx.coffee",
+		"/Users/amirsharif/rappad/app/jobs/soundcloud_user_follow_job.rb",
+		"/Users/amirsharif/rappad/app/jobs/growth_tracker_job.rb",
+		"/Users/amirsharif/rappad/app/assets/javascripts/components/charts/user_charts_search.jsx.coffee",
+		"/Users/amirsharif/rappad/script/scrape_funkvolume.rb",
+		"/Users/amirsharif/rappad/app/assets/javascripts/components/charts/user_charts_graph.jsx.coffee",
+		"/Users/amirsharif/rappad/app/assets/javascripts/components/explore/explore_section_rap_preview.jsx.coffee",
+		"/Users/amirsharif/rappad/app/assets/stylesheets/main.css.sass",
+		"/Users/amirsharif/rappad/app/models/growth_metric.rb",
+		"/Users/amirsharif/rappad/app/assets/javascripts/route_helper.coffee",
+		"/Users/amirsharif/rappad/app/assets/javascripts/components/charts/user_charts_time_picker.jsx.coffee",
+		"/Users/amirsharif/rappad/app/views/charts/_pull.json.jbuilder",
+		"/Users/amirsharif/rappad/app/views/charts/index.slim",
+		"/Users/amirsharif/rappad/app/controllers/user_controller.rb",
+		"/Users/amirsharif/rappad/app/assets/stylesheets/ui-common/_palette.css.sass",
+		"/Users/amirsharif/rappad/app/views/notifications/_receive_props.slim",
+		"/Users/amirsharif/rappad/app/controllers/charts_controller.rb",
+		"/Users/amirsharif/rappad/app/views/home/index.html.slim",
+		"/Users/amirsharif/rappad/app/assets/javascripts/components/editor/word_lookup_dialog.jsx.coffee",
+		"/Users/amirsharif/rappad/vendor/assets/javascripts/underscore.js",
+		"/Users/amirsharif/rappad/app/services/raps/rap_give_feedback.rb",
+		"/Users/amirsharif/rappad/app/models/beat.rb",
+		"/Users/amirsharif/rappad/app/jobs/rap_give_feedback_job.rb",
+		"/Users/amirsharif/rappad/app/models/muut_post.rb",
+		"/Users/amirsharif/rappad/app/views/layouts/application.slim",
+		"/Users/amirsharif/rappad/config/environments/production.rb",
+		"/Users/amirsharif/rappad/app/models/beat/soundcloud_beat.rb",
+		"/Users/amirsharif/rappad/app/models/rap.rb",
+		"/Users/amirsharif/rappad/app/models/verbalist.rb",
+		"/Users/amirsharif/rappad/app/views/battles/index.slim",
+		"/Users/amirsharif/rappad/app/views/home/submit_your_rap.slim",
+		"/Users/amirsharif/rappad/app/controllers/api/webhook_controller.rb",
+		"/Users/amirsharif/rappad/app/assets/javascripts/components/blog/blog_post_content.jsx.coffee",
+		"/Users/amirsharif/rappad/app/models/user.rb",
+		"/Users/amirsharif/rappad/app/controllers/api/messages_controller.rb",
+		"/Users/amirsharif/rappad/app/models/feedback_request.rb",
+		"/Users/amirsharif/rappad/app/models/message.rb",
+		"/Users/amirsharif/rappad/app/models/notification.rb",
+		"/Users/amirsharif/rappad/app/views/notifications/_message_received.slim",
+		"/Users/amirsharif/rappad/app/views/internal_mailer/general_message.slim",
+		"/Users/amirsharif/rappad/app/jobs/send_general_message_email_job.rb",
+		"/Users/amirsharif/rappad/app/mailers/internal_mailer.rb",
+		"/Users/amirsharif/rappad/app/assets/javascripts/charts_controller.js.coffee",
+		"/Users/amirsharif/rappad/app/assets/javascripts/components/blog/blog_post.jsx.coffee",
+		"/Users/amirsharif/rappad/app/controllers/api/api_controller.rb",
+		"/Users/amirsharif/rappad/script/create_lyric_video.rb",
+		"/Users/amirsharif/rappad/app/jobs/create_lyric_sync_video_job.rb",
+		"/Users/amirsharif/rappad/app/assets/stylesheets/home.css.sass",
+		"/Users/amirsharif/rappad/.gitignore",
+		"/Users/amirsharif/rappad/lib/rhyme_engine/frequencer.rb",
+		"/Users/amirsharif/rappad/db/migrate/20151231153250_add_uncommon_word_to_rhyme_set_gram.rb",
+		"/Users/amirsharif/rappad/lib/linguistics/cmudict.txt",
+		"/Users/amirsharif/rappad/app/services/beats/hosted_beat_store.rb",
+		"/Users/amirsharif/rappad/app/views/blog/index.slim",
+		"/Users/amirsharif/rappad/script/generate_lyric_video.js",
+		"/Users/amirsharif/rappad/app/views/bars/songs-about-show.html.slim",
+		"/Users/amirsharif/rappad/app/views/common/_google_adsense.slim",
+		"/Users/amirsharif/rappad/app/assets/javascripts/beats/player.coffee",
+		"/Users/amirsharif/rappad/app/helpers/user_helper.rb",
+		"/Users/amirsharif/rappad/script/rhymes/correction.rb",
+		"/Users/amirsharif/rappad/app/views/rap/video.slim",
+		"/Users/amirsharif/rappad/app/controllers/api/impressions_controller.rb",
+		"/Users/amirsharif/rappad/app/assets/stylesheets/beat_player.sass",
+		"/Users/amirsharif/rappad/app/controllers/rap_controller.rb",
+		"/Users/amirsharif/rappad/app/views/layouts/barebones.slim",
+		"/Users/amirsharif/rappad/app/views/dialogs/third_party_beat_download.slim",
+		"/Users/amirsharif/rappad/app/assets/javascripts/rap_video_v2.jsx.coffee",
+		"/Users/amirsharif/rappad/lib/linguistics/corrections_5.txt",
+		"/Users/amirsharif/rappad/app/views/blog/how-to-diss-someone-in-battle-rap.md",
+		"/Users/amirsharif/rappad/script/rhymes/sync_unusual_words.rb",
+		"/Users/amirsharif/rappad/lib/linguistics/corrections_2.txt",
+		"/Users/amirsharif/rappad/lib/linguistics/unusual_words.txt",
+		"/Users/amirsharif/rappad/db/migrate/20151211152026_add_rhyme_version_to_rhyme_set_grams.rb",
+		"/Users/amirsharif/rappad/db/migrate/20151113021235_create_rhyme_set_grams.rb",
+		"/Users/amirsharif/rappad/app/models/rhyme_set_gram.rb",
+		"/Users/amirsharif/rappad/app/models/rhyme.rb",
+		"/Users/amirsharif/rappad/lib/linguistics/corrections_6.txt",
+		"/Users/amirsharif/rappad/script/rip_beats.rb",
+		"/Users/amirsharif/rappad/lib/assets/freestyle_topics.txt",
+		"/Users/amirsharif/rappad/app/assets/javascripts/utils.coffee",
+		"/Users/amirsharif/rappad/app/assets/javascripts/components/editor/notes.jsx.coffee",
+		"/Users/amirsharif/rappad/app/assets/javascripts/components/radio_player_unit.jsx.coffee",
+		"/Users/amirsharif/rappad/vendor/assets/javascripts/ua.js",
+		"/Users/amirsharif/rappad/vendor/assets/javascripts/vendor.coffee",
+		"/Users/amirsharif/rappad/app/assets/javascripts/explore.jsx.coffee",
+		"/Users/amirsharif/rappad/app/controllers/omniauth_callbacks_controller.rb",
+		"/Users/amirsharif/rappad/app/views/user/soundcloud_client_callback.html",
+		"/Users/amirsharif/rappad/app/assets/javascripts/components/editor/lyrics_editor.jsx.coffee",
+		"/Users/amirsharif/rappad/app/assets/javascripts/components/editor/sidebar.jsx.coffee",
+		"/Users/amirsharif/rappad/app/assets/javascripts/home.coffee",
+		"/Users/amirsharif/rappad/config/environments/development.rb",
+		"/Users/amirsharif/rappad/config/initializers/devise.rb",
+		"/Users/amirsharif/rappad/config/secrets.yml",
+		"/Users/amirsharif/rappad/app/assets/javascripts/components.js",
+		"/Users/amirsharif/rappad/app/models/impression.rb",
+		"/Users/amirsharif/rappad/db/migrate/20150620143636_add_index_to_rap_created_at.rb",
+		"/Users/amirsharif/rappad/app/assets/javascripts/application.js.coffee",
+		"/Users/amirsharif/rappad/db/migrate/20130930012209_create_blueprints.rb",
+		"/Users/amirsharif/rappad/db/migrate/20140924153757_create_notifications.rb",
+		"/Users/amirsharif/rappad/app/controllers/notifications_controller.rb"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+			"",
+			"*.jbuilder",
+			"",
+			"*.json.jbuilder",
+			"",
+			"/Users/amirsharif/rappad/app/services/raps/rap_get_feedback.rb",
+			"",
+			"*.rb",
+			"",
+			"coffee",
+			"",
+			"*.slim",
+			"",
+			"*.sass",
+			"",
+			"*.rb",
+			"*.rn",
+			"",
+			"*.rb",
+			".rb",
+			"",
+			"*.jsx.coffee",
+			".jsx",
+			"",
+			"*.rb",
+			".rb",
+			"",
+			"*.slim",
+			"",
+			"*.slim",
+			"",
+			"*.rb",
+			"",
+			"*.css",
+			"*.rb",
+			"",
+			"*.sass",
+			"",
+			"*.html.erb",
+			"",
+			"*.css",
+			"",
+			"controllers",
+			"",
+			"*.rb",
+			"",
+			"*.j",
+			"*.js",
+			"",
+			"*.css",
+			"",
+			"*.html.erb",
+			"views",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"facebook-iframe",
+			"ensureAPI",
+			"SC.Widget",
+			"widget",
+			"song",
+			"submit",
+			"title",
+			"titke",
+			"time",
+			"report",
+			"issue",
+			"admin",
+			"openWithFormAndEndpoint",
+			"controller",
+			"admin",
+			" if ",
+			"total",
+			"graphData.m",
+			"graphData",
+			"entity-block",
+			", ",
+			"make and",
+			"formats: [:json]",
+			"formats: ",
+			"handlers:",
+			"handlers: ",
+			"UserChartsTimePicker",
+			"daysAgo",
+			"charts",
+			"UserChartsSearch",
+			"UserChartsSearc",
+			"UserChartsGraph",
+			"UserCharts",
+			"UserChartsGraph",
+			"BeatDescription",
+			"props",
+			"give props",
+			"submit_your",
+			"message",
+			"owner",
+			"chart",
+			"charts",
+			"chart",
+			"/charts",
+			"charts",
+			"char",
+			"charts",
+			"handle_rap_comment_post",
+			"rap",
+			"RAP_PATH_REGX",
+			"sffl",
+			"ssl",
+			"ga",
+			"gaa",
+			"advertisement",
+			"cf_async_",
+			"syncEngine",
+			"player",
+			"@_player",
+			"css",
+			"force_ssl",
+			"ogg",
+			"local",
+			"redirect",
+			"write",
+			"3z3O7DeExzk",
+			"hat",
+			"zip",
+			"^[a-z]{3} ",
+			"[a-z]{3} ",
+			"[a-z] ",
+			"d",
+			"^[a-z]{1,2} ",
+			"^[a-z]{1,2}",
+			"^[a-z]'",
+			"[a-z]'",
+			"^[a-z]'",
+			"$\\w{1}",
+			"\\w",
+			"File.open",
+			".read",
+			"IO.readlines",
+			"cmudict.txt",
+			"lingui",
+			"baggage",
+			"grudge",
+			"carrige",
+			"clutch",
+			"damage",
+			"courage",
+			"grudge",
+			"R AH\\d JH$",
+			"storage",
+			"AH\\d N (S|Z)$",
+			"run",
+			"gums",
+			"nuts",
+			"thumbs",
+			"cups",
+			"pups",
+			"trucks",
+			"loves",
+			"love",
+			"loves",
+			"runs",
+			"once",
+			"AH\\d N (S|Z)$",
+			"once",
+			"runs",
+			"resistance",
+			"AH0 N (S|Z)$",
+			"billions",
+			"sequence",
+			"ones",
+			"(Ecotourism|Hatchling|Disorientated|Echolocating|Insectivores|Megabats|Pollinator|Unfurred|Birdbath|Thermals|Crossbred|Foreleg|Housebreaking|Breeches|Forelock|Hackamore|Horsefly|Snaffle|Whinny|Cercus|Naiad|Ovipositor|Specie|Spiracle|Cervine|Palmate|Prehensile|Rutting|Subarctic|Ungulate|Catnapping|Crossbreeding|Strix|Subspecies|Unblinking|Vocalize|Adelies|Capelin|Gentoos|Piscivorous|Porpoising|Rockhopper|Snowbank|Squids|Vocalization|Flenser|IWC|Phonation|Spermaceti|Whalebone|Incent|Qualm|Conscientiousness|Cordiality|GNP|Itemization|Iteration|Pyramiding|Quitclaim|Unrecoverable|Countersign|GDP|NYSE|Overcompensate|Quittance|Survivorship|Promptness|peson|Craftswoman|Bursar|Countercrash|Impecunious|Colorant|Artlessness|Iconic|Idealization|Ocher|Stipple|Arabesque|Divertissement|Glissade|Crayola|Websites|Applique|Beading|Bookbinding|Cabinetmaking|Cloissone|Decoupage|Ikebana|Origami|Perfumery|Tatting|Trapunto|Costuming|Magnificence|Neckline|Prognosticator|Castanets|Clavier|Kettledrum|Genuflect|Gesticulate|Glissando|Nocturne|Scherzo|Stereophonic|Vocalize|Airplay|Aulochrome|Clamorous|Derivations|Interpolation|Nonet|Satchmo|Stdio|Vocalization|Zobo|Emote|Greasepaint|Allemande|Beguine|Cakewalk|Cotillion|Gavotte|Maypole|Mazurka|Quadrille|Tarantella|Unitards|Conscientiousness|Cordiality|Helpfulness|Jocund|Promptness|Sagacious|Staunchness|Veracious|Barista|Essences|Paks|Uncooked|Apis|Regurgitation|Uncapping|Haupia|Hibiscus|Moonscape|Plumeria|Sunbather|Bezel|Chronograph|Craftmanship|Horloge|Horological|Horophile|Hublot|Movado|Subdial|Timekeeping|Melancholia|Convulse|Overindulge|Neurodevelopment|Cocaleros|Maladjustment|MRI|Survivorship|Forgetfulness|Inconsiderate|Countermand|Ravish|Basilisk|Demigod|Faun|Gryphon|HARPIES|HERCULIAN|HERMETIC|Kraken|LYCANTHROPE|Nereid|PROCRUSTEAN|PROMETHEAN|Satyr|Scepter|STOICAL|Bandanna|Braggart|Buckaroo|Buckboard|Bunkhouse|Bushwhacker|Frontiersman|Hardhearted|Hogtie|Neigh|Nicker|Packhorse|Prideful|Remuda|Skedaddle|Stockade|Travois|Victuals|Whinny|Anubis|Archeologist|Cartouches|Copt|Fellahin|Galabiyah|Karnak|Kemet|Natron|Nefertiti|Osiris|Papyrus|Scarab|Shadoof|Tutankhamon|Wadi|Wadjet|Bioluminescent|Denigration|Dilettante|armonica|Quipster|Dogood|Xenophile|Cordiality|Manumission|Sagacious|Veracious|NAACP|Cannonballs|Clotilde|Crossbar|FIFA|Kinsmen|Linesman|Midfielder|NASL|Offside|Promptness|Tiebreaker|IX|AFL|Cowhide|Midfield|NFL|Overslide|Jinxed|Misplay|Outmatched|Ruination|Unequipped|Unmotivated|Unready|Upend|Stanchion|Allez|Breeches|Croissard|Dyneema|Epee|Fencer|FIE|Gorget|Plastron|Quarte|Quillion|Quinte|Swordsmanship|Timekeeper|Bantamweight|Prizefighter|Shadowbox|TKO|Uppercut|Walkover|Exaltation|Hygienic|NCAA|Physiotherapy|Postseason|Soreness|Permafrost|Abutment|Cantilever|Gimbals|Aerogel|Aphelion|Azimuth|Cislunar|Declination|Exobiology|Geophysics|Intergalactic|Luminosity|Polestar|Syzygy|Achromatic|Bisect|Chromatic|Cilia|Dichotomous|Ectoplasm|Endoskeleton|Kinesthesia|Neuron|Nonliving|Protoplasm|Taxonomy|Tendril|Transpiration|Vacuole|Biota|Combustible|EPA|Eclecticism|Gestalt|Parapsychology|Superego|Antiproton|Chromatics|Quanta|Repulsion|Sublimation|Thermodynamics|Ampere|Amplifer|Farad|Galvanometer|Humidistat|Loadstone|Pulsate|Resistor|Rheostat|Solenoid|Spectral|Thermocouple|Tweeter|Waveform|Desiccant|Nonmetallic|Undissolved|Unreactive|Valency|Ytrium|Zymoscope|web-feet|gowned|Façade|Sohne|LeCoultre|Anon|Dadgumit|Giddyup\\!|Vamoose|Emotion\\(al\\)|Why\\?)$",
+			"ed$",
+			"ed",
+			"reded",
+			"red",
+			"haired",
+			"hair",
+			"(Ecotourism|Hatchling|Disorientated|Echolocating|Insectivores|Megabats|Pollinator|Unfurred|Birdbath|Thermals|Crossbred|Foreleg|Housebreaking|Breeches|Forelock|Hackamore|Horsefly|Snaffle|Whinny|Cercus|Naiad|Ovipositor|Specie|Spiracle|Cervine|Palmate|Prehensile|Rutting|Subarctic|Ungulate|Catnapping|Crossbreeding|Strix|Subspecies|Unblinking|Vocalize|Adelies|Capelin|Gentoos|Piscivorous|Porpoising|Rockhopper|Snowbank|Squids|Vocalization|Flenser|IWC|Phonation|Spermaceti|Whalebone|Incent|Qualm|Conscientiousness|Cordiality|GNP|Itemization|Iteration|Pyramiding|Quitclaim|Unrecoverable|Countersign|GDP|NYSE|Overcompensate|Quittance|Survivorship|Promptness|peson|Craftswoman|Bursar|Countercrash|Impecunious|Colorant|Artlessness|Iconic|Idealization|Ocher|Stipple|Arabesque|Divertissement|Glissade|Crayola|Websites|Applique|Beading|Bookbinding|Cabinetmaking|Cloissone|Decoupage|Ikebana|Origami|Perfumery|Tatting|Trapunto|Costuming|Magnificence|Neckline|Prognosticator|Castanets|Clavier|Kettledrum|Genuflect|Gesticulate|Glissando|Nocturne|Scherzo|Stereophonic|Vocalize|Airplay|Aulochrome|Clamorous|Derivations|Interpolation|Nonet|Satchmo|Stdio|Vocalization|Zobo|Emote|Greasepaint|Allemande|Beguine|Cakewalk|Cotillion|Gavotte|Maypole|Mazurka|Quadrille|Tarantella|Unitards|Conscientiousness|Cordiality|Helpfulness|Jocund|Promptness|Sagacious|Staunchness|Veracious|Barista|Essences|Paks|Uncooked|Apis|Regurgitation|Uncapping|Haupia|Hibiscus|Moonscape|Plumeria|Sunbather|Bezel|Chronograph|Craftmanship|Horloge|Horological|Horophile|Hublot|Movado|Subdial|Timekeeping|Melancholia|Convulse|Overindulge|Neurodevelopment|Cocaleros|Maladjustment|MRI|Survivorship|Forgetfulness|Inconsiderate|Countermand|Ravish|Basilisk|Demigod|Faun|Gryphon|HARPIES|HERCULIAN|HERMETIC|Kraken|LYCANTHROPE|Nereid|PROCRUSTEAN|PROMETHEAN|Satyr|Scepter|STOICAL|Bandanna|Braggart|Buckaroo|Buckboard|Bunkhouse|Bushwhacker|Frontiersman|Hardhearted|Hogtie|Neigh|Nicker|Packhorse|Prideful|Remuda|Skedaddle|Stockade|Travois|Victuals|Whinny|Anubis|Archeologist|Cartouches|Copt|Fellahin|Galabiyah|Karnak|Kemet|Natron|Nefertiti|Osiris|Papyrus|Scarab|Shadoof|Tutankhamon|Wadi|Wadjet|Bioluminescent|Denigration|Dilettante|armonica|Quipster|Dogood|Xenophile|Cordiality|Manumission|Sagacious|Veracious|NAACP|Cannonballs|Clotilde|Crossbar|FIFA|Kinsmen|Linesman|Midfielder|NASL|Offside|Promptness|Tiebreaker|IX|AFL|Cowhide|Midfield|NFL|Overslide|Jinxed|Misplay|Outmatched|Ruination|Unequipped|Unmotivated|Unready|Upend|Stanchion|Allez|Breeches|Croissard|Dyneema|Epee|Fencer|FIE|Gorget|Plastron|Quarte|Quillion|Quinte|Swordsmanship|Timekeeper|Bantamweight|Prizefighter|Shadowbox|TKO|Uppercut|Walkover|Exaltation|Hygienic|NCAA|Physiotherapy|Postseason|Soreness|Permafrost|Abutment|Cantilever|Gimbals|Aerogel|Aphelion|Azimuth|Cislunar|Declination|Exobiology|Geophysics|Intergalactic|Luminosity|Polestar|Syzygy|Achromatic|Bisect|Chromatic|Cilia|Dichotomous|Ectoplasm|Endoskeleton|Kinesthesia|Neuron|Nonliving|Protoplasm|Taxonomy|Tendril|Transpiration|Vacuole|Biota|Combustible|EPA|Eclecticism|Gestalt|Parapsychology|Superego|Antiproton|Chromatics|Quanta|Repulsion|Sublimation|Thermodynamics|Ampere|Amplifer|Farad|Galvanometer|Humidistat|Loadstone|Pulsate|Resistor|Rheostat|Solenoid|Spectral|Thermocouple|Tweeter|Waveform|Desiccant|Nonmetallic|Undissolved|Unreactive|Valency|Ytrium|Zymoscope|web-feet|gowned|Façade|Sohne|LeCoultre|Anon|Why?|Dadgumit|Giddyup!|Vamoose|Emotion\\(al\\)|Why\\?)",
+			"(Ecotourism|Hatchling|Disorientated|Echolocating|Insectivores|Megabats|Pollinator|Unfurred|Birdbath|Thermals|Crossbred|Foreleg|Housebreaking|Breeches|Forelock|Hackamore|Horsefly|Snaffle|Whinny|Cercus|Naiad|Ovipositor|Specie|Spiracle|Cervine|Palmate|Prehensile|Rutting|Subarctic|Ungulate|Catnapping|Crossbreeding|Strix|Subspecies|Unblinking|Vocalize|Adelies|Capelin|Gentoos|Piscivorous|Porpoising|Rockhopper|Snowbank|Squids|Vocalization|Flenser|IWC|Phonation|Spermaceti|Whalebone|Incent|Qualm|Conscientiousness|Cordiality|GNP|Itemization|Iteration|Pyramiding|Quitclaim|Unrecoverable|Countersign|GDP|NYSE|Overcompensate|Quittance|Survivorship|Promptness|peson|Craftswoman|Bursar|Countercrash|Impecunious|Colorant|Artlessness|Iconic|Idealization|Ocher|Stipple|Arabesque|Divertissement|Glissade|Crayola|Websites|Applique|Beading|Bookbinding|Cabinetmaking|Cloissone|Decoupage|Ikebana|Origami|Perfumery|Tatting|Trapunto|Costuming|Magnificence|Neckline|Prognosticator|Castanets|Clavier|Kettledrum|Genuflect|Gesticulate|Glissando|Nocturne|Scherzo|Stereophonic|Vocalize|Airplay|Aulochrome|Clamorous|Derivations|Interpolation|Nonet|Satchmo|Stdio|Vocalization|Zobo|Emote|Greasepaint|Allemande|Beguine|Cakewalk|Cotillion|Gavotte|Maypole|Mazurka|Quadrille|Tarantella|Unitards|Conscientiousness|Cordiality|Helpfulness|Jocund|Promptness|Sagacious|Staunchness|Veracious|Barista|Essences|Paks|Uncooked|Apis|Regurgitation|Uncapping|Haupia|Hibiscus|Moonscape|Plumeria|Sunbather|Bezel|Chronograph|Craftmanship|Horloge|Horological|Horophile|Hublot|Movado|Subdial|Timekeeping|Melancholia|Convulse|Overindulge|Neurodevelopment|Cocaleros|Maladjustment|MRI|Survivorship|Forgetfulness|Inconsiderate|Countermand|Ravish|Basilisk|Demigod|Faun|Gryphon|HARPIES|HERCULIAN|HERMETIC|Kraken|LYCANTHROPE|Nereid|PROCRUSTEAN|PROMETHEAN|Satyr|Scepter|STOICAL|Bandanna|Braggart|Buckaroo|Buckboard|Bunkhouse|Bushwhacker|Frontiersman|Hardhearted|Hogtie|Neigh|Nicker|Packhorse|Prideful|Remuda|Skedaddle|Stockade|Travois|Victuals|Whinny|Anubis|Archeologist|Cartouches|Copt|Fellahin|Galabiyah|Karnak|Kemet|Natron|Nefertiti|Osiris|Papyrus|Scarab|Shadoof|Tutankhamon|Wadi|Wadjet|Bioluminescent|Denigration|Dilettante|armonica|Quipster|Dogood|Xenophile|Cordiality|Manumission|Sagacious|Veracious|NAACP|Cannonballs|Clotilde|Crossbar|FIFA|Kinsmen|Linesman|Midfielder|NASL|Offside|Promptness|Tiebreaker|IX|AFL|Cowhide|Midfield|NFL|Overslide|Jinxed|Misplay|Outmatched|Ruination|Unequipped|Unmotivated|Unready|Upend|Stanchion|Allez|Breeches|Croissard|Dyneema|Epee|Fencer|FIE|Gorget|Plastron|Quarte|Quillion|Quinte|Swordsmanship|Timekeeper|Bantamweight|Prizefighter|Shadowbox|TKO|Uppercut|Walkover|Exaltation|Hygienic|NCAA|Physiotherapy|Postseason|Soreness|Permafrost|Abutment|Cantilever|Gimbals|Aerogel|Aphelion|Azimuth|Cislunar|Declination|Exobiology|Geophysics|Intergalactic|Luminosity|Polestar|Syzygy|Achromatic|Bisect|Chromatic|Cilia|Dichotomous|Ectoplasm|Endoskeleton|Kinesthesia|Neuron|Nonliving|Protoplasm|Taxonomy|Tendril|Transpiration|Vacuole|Biota|Combustible|EPA|Eclecticism|Gestalt|Parapsychology|Superego|Antiproton|Chromatics|Quanta|Repulsion|Sublimation|Thermodynamics|Ampere|Amplifer|Farad|Galvanometer|Humidistat|Loadstone|Pulsate|Resistor|Rheostat|Solenoid|Spectral|Thermocouple|Tweeter|Waveform|Desiccant|Nonmetallic|Undissolved|Unreactive|Valency|Ytrium|Zymoscope|web-feet|gowned|Façade|Sohne|LeCoultre|Anon|Why?|Dadgumit|Giddyup!|Vamoose|Emotion(al)|Why?)",
+			"(",
+			"why?",
+			" ",
+			"> ",
+			" >"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"_",
+			"",
+			"start",
+			"loadMedia",
+			"'",
+			"Slot::CANCELED",
+			"score"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "package.json",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1025,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								505,
+								505
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.coffeecompile_output":
+	{
+		"height": 333.0
+	},
+	"output.find_results":
+	{
+		"height": 527.0
+	},
+	"pinned_build_system": "",
+	"project": "mobile-rappad.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"readm",
+				"node_modules/react-native/node_modules/yeoman-generator/node_modules/cli-table/node_modules/colors/ReadMe.md"
+			],
+			[
+				"gitignore",
+				".gitignore"
+			],
+			[
+				"rapshow",
+				"app/views/rap/show.html.slim"
+			],
+			[
+				"beatshow",
+				"app/views/beats/show.html.slim"
+			],
+			[
+				"likebar",
+				"app/views/common/_facebook_like_bar.slim"
+			],
+			[
+				"sounreco",
+				"app/assets/javascripts/components/editor/soundcloud_recorder.jsx.coffee"
+			],
+			[
+				"soundengine",
+				"app/assets/javascripts/beats/soundcloud_engine.coffee"
+			],
+			[
+				"rapsave",
+				"app/services/raps/rap_save.rb"
+			],
+			[
+				"createprop",
+				"db/migrate/20130321013014_create_props.rb"
+			],
+			[
+				"submi",
+				"app/assets/javascripts/components/rap_submission_form.jsx.coffee"
+			],
+			[
+				"homecontr",
+				"app/controllers/home_controller.rb"
+			],
+			[
+				"growtrack",
+				"app/models/growth_tracker.rb"
+			],
+			[
+				"redit",
+				"app/views/devise/registrations/edit.html.slim"
+			],
+			[
+				"weekdiprop",
+				"app/views/notification_mailer/_weekly_digest_props.slim"
+			],
+			[
+				"weekl",
+				"app/views/notification_mailer/weekly_digest.slim"
+			],
+			[
+				"neteg",
+				"app/views/user/_net_ego.slim"
+			],
+			[
+				"weekldi",
+				"app/jobs/weekly_digest_job.rb"
+			],
+			[
+				"souuserfol",
+				"app/jobs/soundcloud_user_follow_job.rb"
+			],
+			[
+				"sounuserlike",
+				"app/jobs/soundcloud_user_like_job.rb"
+			],
+			[
+				"dia",
+				"app/assets/javascripts/dialogs.jsx.coffee"
+			],
+			[
+				"beatcoffee",
+				"app/assets/javascripts/beats/beat.coffee"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"apibea",
+				"app/controllers/api/beats_controller.rb"
+			],
+			[
+				"diabeat",
+				"app/views/dialogs/beat.slim"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"usercharts",
+				"app/assets/javascripts/components/charts/user_charts.jsx.coffee"
+			],
+			[
+				"charcoffe",
+				"app/assets/javascripts/charts.jsx.coffee"
+			],
+			[
+				"diacoffe",
+				"app/assets/javascripts/dialogs.jsx.coffee"
+			],
+			[
+				"grotr",
+				"app/jobs/growth_tracker_job.rb"
+			],
+			[
+				"grotrack",
+				"app/models/growth_tracker.rb"
+			],
+			[
+				"admincontr",
+				"app/controllers/admin_controller.rb"
+			],
+			[
+				"scrape",
+				"script/scrape_funkvolume.rb"
+			],
+			[
+				"growthtrac",
+				"app/jobs/growth_tracker_job.rb"
+			],
+			[
+				"userchar",
+				"app/assets/javascripts/components/charts/user_charts_search.jsx.coffee"
+			],
+			[
+				"noprop",
+				"app/views/notifications/_receive_props.slim"
+			],
+			[
+				"noprops",
+				"app/views/notifications/_receive_props.slim"
+			],
+			[
+				"palette",
+				"app/assets/stylesheets/ui-common/_palette.css.sass"
+			],
+			[
+				"chcontr",
+				"app/controllers/charts_controller.rb"
+			],
+			[
+				"uscontr",
+				"app/controllers/user_controller.rb"
+			],
+			[
+				"chaindex",
+				"app/views/charts/index.slim"
+			],
+			[
+				"userchargra",
+				"app/assets/javascripts/components/charts/user_charts_graph.jsx.coffee"
+			],
+			[
+				"apibeatc",
+				"app/controllers/api/beats_controller.rb"
+			],
+			[
+				"homeindexslim",
+				"app/views/home/index.html.slim"
+			],
+			[
+				"usercontr",
+				"app/controllers/user_controller.rb"
+			],
+			[
+				"gromwtr",
+				"app/models/growth_metric.rb"
+			],
+			[
+				"mainsass",
+				"app/assets/stylesheets/main.css.sass"
+			],
+			[
+				"wordlook",
+				"app/assets/javascripts/components/editor/word_lookup_dialog.jsx.coffee"
+			],
+			[
+				"userchartimer",
+				"app/assets/javascripts/components/charts/user_charts_time_picker.jsx.coffee"
+			],
+			[
+				"routeher",
+				"app/assets/javascripts/route_helper.coffee"
+			],
+			[
+				"userchartime",
+				"app/assets/javascripts/components/charts/user_charts_time_picker.jsx.coffee"
+			],
+			[
+				"userchasearc",
+				"app/assets/javascripts/components/charts/user_charts_search.jsx.coffee"
+			],
+			[
+				"search",
+				"app/views/home/search.slim"
+			],
+			[
+				"charindex",
+				"app/views/charts/index.slim"
+			],
+			[
+				"chacontr",
+				"app/controllers/charts_controller.rb"
+			],
+			[
+				"rap.rb",
+				"app/models/rap.rb"
+			],
+			[
+				"apibeatcontr",
+				"app/controllers/api/beats_controller.rb"
+			],
+			[
+				"soundbeat",
+				"app/models/beat/soundcloud_beat.rb"
+			],
+			[
+				"beat.rb",
+				"app/models/beat.rb"
+			],
+			[
+				"appslim",
+				"app/views/layouts/application.slim"
+			],
+			[
+				"submityour",
+				"app/views/home/submit_your_rap.slim"
+			],
+			[
+				"battleindex",
+				"app/views/battles/index.slim"
+			],
+			[
+				"homindex",
+				"app/views/home/index.html.slim"
+			],
+			[
+				"genermess",
+				"app/views/internal_mailer/general_message.slim"
+			],
+			[
+				"senggeera",
+				"app/jobs/send_general_message_email_job.rb"
+			],
+			[
+				"message",
+				"app/models/message.rb"
+			],
+			[
+				"apimess",
+				"app/controllers/api/messages_controller.rb"
+			],
+			[
+				"user.rb",
+				"app/models/user.rb"
+			],
+			[
+				"messrece",
+				"app/views/notifications/_message_received.slim"
+			],
+			[
+				"blogpostcoffe",
+				"app/assets/javascripts/components/blog/blog_post.jsx.coffee"
+			],
+			[
+				"blogen",
+				"app/assets/javascripts/components/blog/blog_post_content.jsx.coffee"
+			],
+			[
+				"charcontr",
+				"app/controllers/charts_controller.rb"
+			],
+			[
+				"charts",
+				"app/controllers/charts_controller.rb"
+			],
+			[
+				"apicontr",
+				"app/controllers/api/api_controller.rb"
+			],
+			[
+				"apiwbe",
+				"app/controllers/api/webhook_controller.rb"
+			],
+			[
+				"rapgivefe",
+				"app/jobs/rap_give_feedback_job.rb"
+			],
+			[
+				"webhokc",
+				"app/controllers/api/webhook_controller.rb"
+			],
+			[
+				"feed",
+				"app/models/feedback_request.rb"
+			],
+			[
+				"product",
+				"config/environments/production.rb"
+			],
+			[
+				"facebook",
+				"app/views/common/_facebook_like_bar.slim"
+			],
+			[
+				"playcoffee",
+				"app/assets/javascripts/beats/player.coffee"
+			],
+			[
+				"soundreco",
+				"app/assets/javascripts/components/editor/soundcloud_recorder.jsx.coffee"
+			],
+			[
+				"adsense",
+				"app/views/common/_google_adsense.slim"
+			],
+			[
+				"dialogbeat",
+				"app/views/dialogs/third_party_beat_download.slim"
+			],
+			[
+				"dibeat",
+				"app/views/dialogs/beat.slim"
+			],
+			[
+				"songabout",
+				"app/views/bars/songs-about-show.html.slim"
+			],
+			[
+				"rapvideo",
+				"app/assets/javascripts/rap_video_v2.jsx.coffee"
+			],
+			[
+				"player",
+				"app/assets/javascripts/beats/player.coffee"
+			],
+			[
+				"applslim",
+				"app/views/layouts/application.slim"
+			],
+			[
+				"homesass",
+				"app/assets/stylesheets/home.css.sass"
+			],
+			[
+				"barebon",
+				"app/views/layouts/barebones.slim"
+			],
+			[
+				"rapcontr",
+				"app/controllers/rap_controller.rb"
+			],
+			[
+				"beatplay",
+				"app/assets/stylesheets/beat_player.sass"
+			],
+			[
+				"createvideo",
+				"app/jobs/create_lyric_sync_video_job.rb"
+			],
+			[
+				"createlric",
+				"script/create_lyric_video.rb"
+			],
+			[
+				"videjob",
+				"app/jobs/create_lyric_sync_video_job.rb"
+			],
+			[
+				"genevide",
+				"script/generate_lyric_video.js"
+			],
+			[
+				"apiimconrt",
+				"app/controllers/api/impressions_controller.rb"
+			],
+			[
+				"soureco",
+				"app/assets/javascripts/components/editor/soundcloud_recorder.jsx.coffee"
+			],
+			[
+				"corre",
+				"lib/linguistics/corrections_5.txt"
+			],
+			[
+				"correct",
+				"script/rhymes/correction.rb"
+			],
+			[
+				"userhelper",
+				"app/helpers/user_helper.rb"
+			],
+			[
+				"blogindex",
+				"app/views/blog/index.slim"
+			],
+			[
+				"hostebeat",
+				"app/services/beats/hosted_beat_store.rb"
+			],
+			[
+				"hostbed",
+				"app/views/blog/how-to-diss-someone-in-battle-rap.md"
+			],
+			[
+				"sync",
+				"script/rhymes/sync_unusual_words.rb"
+			],
+			[
+				"addversi",
+				"db/migrate/20151211152026_add_rhyme_version_to_rhyme_set_grams.rb"
+			],
+			[
+				"creathrmset",
+				"db/migrate/20151113021235_create_rhyme_set_grams.rb"
+			],
+			[
+				"cmudi",
+				"lib/linguistics/cmudict.txt"
+			],
+			[
+				"rhyme",
+				"app/models/rhyme.rb"
+			],
+			[
+				"rhyme.rb",
+				"app/models/rhyme.rb"
+			],
+			[
+				"rhymesetgram",
+				"app/models/rhyme_set_gram.rb"
+			],
+			[
+				"adduncomnword",
+				"db/migrate/20151231153250_add_uncommon_word_to_rhyme_set_gram.rb"
+			],
+			[
+				"frequ",
+				"lib/rhyme_engine/frequencer.rb"
+			],
+			[
+				"ignore",
+				".gitignore"
+			],
+			[
+				"ripbeat",
+				"script/rip_beats.rb"
+			],
+			[
+				"hostbeat",
+				"app/services/beats/hosted_beat_store.rb"
+			],
+			[
+				"correc",
+				"lib/linguistics/corrections_2.txt"
+			],
+			[
+				"topic",
+				"lib/assets/freestyle_topics.txt"
+			],
+			[
+				"topictxt",
+				"lib/assets/freestyle_topics.txt"
+			],
+			[
+				"omni",
+				"app/controllers/omniauth_callbacks_controller.rb"
+			],
+			[
+				"venco",
+				"vendor/assets/javascripts/vendor.coffee"
+			],
+			[
+				"ua",
+				"vendor/assets/javascripts/ua.js"
+			],
+			[
+				"homon",
+				"app/controllers/home_controller.rb"
+			],
+			[
+				"omniauth",
+				"app/controllers/omniauth_callbacks_controller.rb"
+			],
+			[
+				"devrb",
+				"config/initializers/devise.rb"
+			],
+			[
+				"devlop",
+				"config/environments/development.rb"
+			],
+			[
+				"omnic",
+				"app/controllers/omniauth_callbacks_controller.rb"
+			],
+			[
+				"secreyml",
+				"config/secrets.yml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 398.0,
+		"last_filter": "map",
+		"selected_items":
+		[
+			[
+				"map",
+				"map"
+			],
+			[
+				"poll_",
+				"poll_collection"
+			]
+		],
+		"width": 764.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 337.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}
