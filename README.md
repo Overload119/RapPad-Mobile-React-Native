@@ -38,6 +38,9 @@ npm start
 ```
 
 1. Make Gradle faster: `https://docs.gradle.org/2.4/userguide/gradle_daemon.html`
+2. `npm start`
+3. `adb reverse tcp:8081 tcp:8080`
+4.
 
 This will start a [Webpack Dev Server](https://github.com/webpack/webpack-dev-server) and React Packager. The dev server will watch your JS files for changes and automatically lint and generate the `index.[platform].js` files expected by your React Native iOS or Android app.
 
