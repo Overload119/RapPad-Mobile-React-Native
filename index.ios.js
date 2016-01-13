@@ -3,12 +3,12 @@
  * https://github.com/jhabdas/react-native-webpack-starter-kit
  */
 import {AppRegistry} from 'react-native';
-import App from './components/App';
+import App from './src/components/App';
 
 class Root extends App {
   static defaultProps = {
     ...App.defaultProps,
-    instructions: 'Shake or press menu button for dev menu',
+    instructions: 'Press Cmd+R to reload,\nCmd+D or shake for dev menu',
   }
 }
 

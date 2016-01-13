@@ -3,6 +3,9 @@
  * https://github.com/jhabdas/react-native-webpack-starter-kit
  */
 import React, {Component, PropTypes} from 'react-native';
+import {Router, Route, Schema, Animations, TabBar} from 'react-native-router-flux';
+import Launch from './Launch.js';
+import Button from 'react-native-button';
 
 const {
   Platform,
@@ -35,38 +38,9 @@ class App extends Component {
     let { platform } = this.state;
 
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to RapPad Mobile!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.{platform}.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-      </View>
+      <Launch />
     );
   }
 }
-
-let styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 export default App;

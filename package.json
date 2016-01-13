@@ -1,8 +1,8 @@
 {
-  "name": "App",
-  "version": "1.17.0",
-  "description": "A future-facing starter kit for React Native apps.",
-  "author": "Josh Habdas <jhabdas@gmail.com> (http://habd.as)",
+  "name": "RapPadMobile",
+  "version": "1.0.0",
+  "description": "RapPad Mobile, the mobile companion to RapPad",
+  "author": "RapPad (www.rappad.co)",
   "license": "MIT",
   "scripts": {
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
@@ -12,28 +12,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jhabdas/react-native-webpack-starter-kit"
+    "url": "https://github.com/Overload119/RapPad-Mobile-React-Native.git"
   },
   "engines": {
     "node": ">=4",
     "npm": ">=2 <4"
   },
   "dependencies": {
+    "react": "^0.14.6",
     "react-native": "^0.17.0",
-    "react-native-router-flux": "^2.0.5"
+    "react-native-button": "^1.3.1",
+    "react-native-router-flux": "^2.0.5",
+    "react-redux": "^4.0.6",
+    "redux": "^3.0.5"
   },
   "devDependencies": {
-    "babel-core": "^6.3.17",
-    "babel-eslint": "^5.0.0-beta6",
-    "babel-loader": "^6.2.0",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-react": "^6.3.13",
-    "babel-preset-stage-1": "^6.3.13",
     "eslint": "^1.10.3",
     "eslint-loader": "^1.1.1",
-    "eslint-plugin-react": "^3.11.2",
-    "react-native-webpack-server": "^0.8.3",
-    "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
+    "eslint-plugin-react": "^3.11.2"
   }
 }
