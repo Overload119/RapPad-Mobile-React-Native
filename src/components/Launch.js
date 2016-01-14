@@ -1,13 +1,7 @@
-/**
-* This should check to see if logged in. If it is, redirect to Dashboard.
-* If not logged in, show logo and auth buttons.
-**/
-
-import React, {View, Text, StyleSheet, Dimensions, Image, Animated} from 'react-native'
-import Button from 'react-native-button'
-import {Actions} from 'react-native-router-flux'
-import {COLORS} from '../constants/Colors'
+import React, {View, Text, StyleSheet, Dimensions, Image, Animated, Alert, Navigator} from 'react-native';
+import {COLORS} from '../constants/Colors';
 import RPLink from './RPLink';
+import RPRouter from '../lib/RPRouter.js';
 
 class Launch extends React.Component {
   constructor(props) {
@@ -16,6 +10,11 @@ class Launch extends React.Component {
       opacityValue: new Animated.Value(0),
       bottomYOffsetValue: new Animated.Value(-80)
     };
+  }
+  handlePressRegister() {
+    this.props.navigator.push(RPRouter.getRegisterRoute());
+  }
+  handlePressLogin() {
   }
   render() {
     return (
@@ -37,8 +36,16 @@ class Launch extends React.Component {
           position: 'absolute',
           bottom: this.state.bottomYOffsetValue
         }}>
-          <RPLink style={styles.authButton}>Log In</RPLink>
-          <RPLink style={styles.authButton}>Sign Up</RPLink>
+          <RPLink
+            style={styles.authButton}
+            onPress={this.handlePressLogin}>
+            Log In
+          </RPLink>
+          <RPLink
+            style={styles.authButton}
+            onPress={this.handlePressRegister.bind(this)}>
+            Sign Up
+          </RPLink>
         </Animated.View>
       </View>
     );
@@ -82,4 +89,5 @@ let styles = StyleSheet.create({
   }
 });
 
+export default Launch;
 module.exports = Launch;

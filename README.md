@@ -28,3 +28,9 @@ npm install
 
 1. `react-native start`
 2. `adb reverse tcp:8081 tcp:8081`
+
+## Troubleshooting
+
+### Unable to download JS bundle
+
+Make sure you ran the `adb reverse` command. Restarting your computer can help sometimes. Hit Crt+M to reload JS.
