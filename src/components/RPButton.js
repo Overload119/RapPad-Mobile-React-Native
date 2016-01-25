@@ -1,13 +1,14 @@
-import Button from 'react-native-button';
 import {COLORS} from '../constants/Colors';
 import React, {StyleSheet} from 'react-native';
 
 class RPButton extends React.Component {
   render() {
     return (
-      <Button style={styles.button}>
-        {this.props.children}
-      </Button>
+      <View onPress={this.props.onPress} style={styles.button}>
+        <Text style={[styles.button, this.props.style]}>
+          {this.props.children}
+        </Text>
+      </View>
     );
   }
 }

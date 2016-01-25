@@ -21,7 +21,7 @@
   "dependencies": {
     "@exponent/react-native-navigator": "^0.3.7",
     "react": "^0.14.6",
-    "react-native": "^0.18.1"
+    "react-native": "^0.17.0"
   },
   "devDependencies": {
     "eslint": "^1.10.3",
