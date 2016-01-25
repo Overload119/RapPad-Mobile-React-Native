@@ -1,6 +1,6 @@
 # RapPad Mobile
 
-This is my app.
+The RapPad Mobile app for both Android and iOS built using React Native.
 
 ## Requirements
 
@@ -28,8 +28,11 @@ npm install
 
 1. `react-native start`
 2. `adb reverse tcp:8081 tcp:8081`
+3. `react-native run-android` to install the APK.
 
 ## Troubleshooting
+
+Below you'll find the issues we ran into and the fixes we found for them.
 
 ### Unable to download JS bundle
 
