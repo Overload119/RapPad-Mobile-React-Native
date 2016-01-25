@@ -3,7 +3,7 @@
 * After the user signs up successfully, it'll redirect them to the Dashboard.
 **/
 
-import React, {View, Text} from 'react-native';
+import React, {View, Text, BackAndroid} from 'react-native';
 
 class Register extends React.Component {
   constructor(props) {
