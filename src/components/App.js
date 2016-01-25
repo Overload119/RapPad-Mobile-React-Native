@@ -1,18 +1,8 @@
-/**
- * React Native Webpack Starter Kit
- * https://github.com/jhabdas/react-native-webpack-starter-kit
- */
-import React, {Component, PropTypes} from 'react-native';
-import {Router, Route, Schema, Animations, TabBar} from 'react-native-router-flux';
+import React, {Component, PropTypes, Platform, StyleSheet, Text, View} from 'react-native';
+import ExNavigator from '@exponent/react-native-navigator';
 import Launch from './Launch.js';
-import Button from 'react-native-button';
-
-const {
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-} = React;
+import Register from './Register.js';
+import RPRouter from '../lib/RPRouter.js';
 
 class App extends Component {
 
@@ -37,8 +27,13 @@ class App extends Component {
     const { instructions } = this.props;
     let { platform } = this.state;
 
+    // TODO - if logged in, show navigation bar
+    // if logged in, don't show launch, but show dashboard.
     return (
-      <Launch />
+      <ExNavigator
+        initialRoute={RPRouter.getLaunchRoute()}
+        showNavigationBar={false}
+      />
     );
   }
 }
