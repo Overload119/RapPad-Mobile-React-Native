@@ -1,4 +1,3 @@
-import Button from 'react-native-button';
 import {COLORS} from '../constants/Colors';
 import React, {StyleSheet, Text, TouchableHighlight} from 'react-native';
 

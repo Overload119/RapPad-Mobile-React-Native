@@ -10,7 +10,7 @@ class Root extends App {
     ...App.defaultProps,
     instructions: 'Press Cmd+R to reload,\nCmd+D or shake for dev menu',
     platform: "os"
-  }
+  };
 }
 
-AppRegistry.registerComponent('App', () => Root);
+AppRegistry.registerComponent('RapPadMobile', () => Root);

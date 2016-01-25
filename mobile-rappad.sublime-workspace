@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"handle",
+				"handlePressRegister"
+			],
+			[
+				"na",
+				"navigator	(package.json)"
+			],
+			[
+				"boo",
+				"bottomYOffsetValue"
+			],
+			[
+				"opac",
+				"opacityValue"
+			],
+			[
 				"device",
 				"deviceWidth"
 			],
@@ -396,10 +412,6 @@
 				"loadAndPlayCurrentTrack"
 			],
 			[
-				"handle",
-				"handleClickPlay"
-			],
-			[
 				"vertica",
 				"vertical-align"
 			],
@@ -502,18 +514,6 @@
 			[
 				"best_tag",
 				"best_tag_slugs"
-			],
-			[
-				"trendingea",
-				"trendingBeatsComponent"
-			],
-			[
-				"multiRhyme",
-				"multiRhymeQuery"
-			],
-			[
-				"error",
-				"errorMessage"
 			]
 		]
 	},
@@ -858,14 +858,21 @@
 	},
 	"file_history":
 	[
-		"/Users/amirsharif/mobile-rappad/src/main.android.js",
+		"/Users/amirsharif/mobile-rappad/android/app/src/main/AndroidManifest.xml",
+		"/Users/amirsharif/mobile-rappad/src/components/Register.js",
 		"/Users/amirsharif/mobile-rappad/package.json",
+		"/Users/amirsharif/mobile-rappad/index.android.js",
+		"/Users/amirsharif/mobile-rappad/src/components/App.js",
+		"/Users/amirsharif/mobile-rappad/android/app/src/main/java/com/rappadmobile/MainActivity.java",
 		"/Users/amirsharif/mobile-rappad/README.md",
+		"/Users/amirsharif/.bash_profile",
+		"/Users/amirsharif/mobile-rappad/src/scenes/launchScene.js",
+		"/Users/amirsharif/mobile-rappad/src/lib/RouteMapper.js",
+		"/Users/amirsharif/mobile-rappad/src/main.android.js",
 		"/Users/amirsharif/mobile-rappad/src/components/RPButton.js",
 		"/Users/amirsharif/mobile-rappad/src/constants/Colors.js",
 		"/Users/amirsharif/mobile-rappad/mobile-rappad.sublime-project",
 		"/Users/amirsharif/mobile-rappad/src/components/launch.js",
-		"/Users/amirsharif/mobile-rappad/src/components/App.js",
 		"/Users/amirsharif/mobile-rappad/node_modules/react-native/node_modules/yeoman-generator/node_modules/cli-table/node_modules/colors/ReadMe.md",
 		"/Users/amirsharif/mobile-rappad/.gitignore",
 		"/Users/amirsharif/rappad/app/assets/javascripts/beats/soundcloud_engine.coffee",
@@ -978,14 +985,7 @@
 		"/Users/amirsharif/rappad/app/assets/javascripts/components/radio_player_unit.jsx.coffee",
 		"/Users/amirsharif/rappad/vendor/assets/javascripts/ua.js",
 		"/Users/amirsharif/rappad/vendor/assets/javascripts/vendor.coffee",
-		"/Users/amirsharif/rappad/app/assets/javascripts/explore.jsx.coffee",
-		"/Users/amirsharif/rappad/app/controllers/omniauth_callbacks_controller.rb",
-		"/Users/amirsharif/rappad/app/views/user/soundcloud_client_callback.html",
-		"/Users/amirsharif/rappad/app/assets/javascripts/components/editor/lyrics_editor.jsx.coffee",
-		"/Users/amirsharif/rappad/app/assets/javascripts/components/editor/sidebar.jsx.coffee",
-		"/Users/amirsharif/rappad/app/assets/javascripts/home.coffee",
-		"/Users/amirsharif/rappad/config/environments/development.rb",
-		"/Users/amirsharif/rappad/config/initializers/devise.rb"
+		"/Users/amirsharif/rappad/app/assets/javascripts/explore.jsx.coffee"
 	],
 	"find":
 	{
@@ -1057,6 +1057,17 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"App",
+			"Launch",
+			"babel",
+			"BuildConfig",
+			"react-native",
+			"editor",
+			"Linked",
+			"navigator",
+			"react-native",
+			"60",
+			"require",
 			"login",
 			"var",
 			"styles",
@@ -1173,18 +1184,7 @@
 			"courage",
 			"grudge",
 			"R AH\\d JH$",
-			"storage",
-			"AH\\d N (S|Z)$",
-			"run",
-			"gums",
-			"nuts",
-			"thumbs",
-			"cups",
-			"pups",
-			"trucks",
-			"loves",
-			"love",
-			"loves"
+			"storage"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1258,7 +1258,47 @@
 		"selected_items":
 		[
 			[
+				"packa",
+				"package.json"
+			],
+			[
+				"appjs",
+				"src/components/App.js"
+			],
+			[
+				"andoi",
+				"index.android.js"
+			],
+			[
 				"pack",
+				"package.json"
+			],
+			[
+				"indexan",
+				"index.android.js"
+			],
+			[
+				"readme",
+				"README.md"
+			],
+			[
+				"appj",
+				"src/components/App.js"
+			],
+			[
+				"andoman",
+				"~/mobile-rappad/android/app/src/main/java/com/rappadmobile/MainActivity.java"
+			],
+			[
+				"packjs",
+				"package.json"
+			],
+			[
+				"launcjs",
+				"src/components/Launch.js"
+			],
+			[
+				"package",
 				"package.json"
 			],
 			[
@@ -1268,14 +1308,6 @@
 			[
 				"rpbut",
 				"src/components/RPButton.js"
-			],
-			[
-				"packa",
-				"package.json"
-			],
-			[
-				"readme",
-				"README.md"
 			],
 			[
 				"packj",
@@ -1736,38 +1768,6 @@
 			[
 				"ignore",
 				".gitignore"
-			],
-			[
-				"ripbeat",
-				"script/rip_beats.rb"
-			],
-			[
-				"hostbeat",
-				"app/services/beats/hosted_beat_store.rb"
-			],
-			[
-				"correc",
-				"lib/linguistics/corrections_2.txt"
-			],
-			[
-				"topic",
-				"lib/assets/freestyle_topics.txt"
-			],
-			[
-				"topictxt",
-				"lib/assets/freestyle_topics.txt"
-			],
-			[
-				"omni",
-				"app/controllers/omniauth_callbacks_controller.rb"
-			],
-			[
-				"venco",
-				"vendor/assets/javascripts/vendor.coffee"
-			],
-			[
-				"ua",
-				"vendor/assets/javascripts/ua.js"
 			]
 		],
 		"width": 0.0

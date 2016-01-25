@@ -1,19 +1,19 @@
 import React, {Component, PropTypes, Platform, StyleSheet, Text, View} from 'react-native';
 import ExNavigator from '@exponent/react-native-navigator';
+
 import Launch from './Launch.js';
 import Register from './Register.js';
 import RPRouter from '../lib/RPRouter.js';
 
 class App extends Component {
-
   static propTypes = {
     instructions: PropTypes.string,
-  }
+  };
 
   static defaultProps = {
     ...Component.defaultProps,
     instructions: 'Usage instructions not provided.',
-  }
+  };
 
   constructor(props, context) {
     super(props, context);
@@ -39,3 +39,4 @@ class App extends Component {
 }
 
 export default App;
+module.exports = App;

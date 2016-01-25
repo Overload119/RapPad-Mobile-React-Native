@@ -10,7 +10,7 @@ class Root extends App {
     ...App.defaultProps,
     instructions: 'Shake or press menu button for dev menu',
     platform: "android"
-  }
+  };
 }
 
-AppRegistry.registerComponent('App', () => Root);
+AppRegistry.registerComponent('RapPadMobile', () => Root);
