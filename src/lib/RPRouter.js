@@ -1,6 +1,4 @@
 import ExNavigator, { SceneConfigs } from '@exponent/react-native-navigator';
-import Launch from '../components/Launch';
-import Register from '../components/Register';
 
 let RPRouter = {
   getLaunchRoute() {
@@ -14,6 +12,16 @@ let RPRouter = {
     return {
       getSceneClass() {
         return require('../components/Register');
+      }
+    };
+  },
+  getLoginRoute() {
+    return {
+      getTitle() {
+        return 'Login';
+      },
+      getSceneClass() {
+        return require('../components/Login');
       }
     };
   }

@@ -4,6 +4,7 @@ import ExNavigator from '@exponent/react-native-navigator';
 import Launch from './Launch.js';
 import Register from './Register.js';
 import RPRouter from '../lib/RPRouter.js';
+import {COLORS} from '../constants/Colors';
 
 class App extends Component {
   static propTypes = {
