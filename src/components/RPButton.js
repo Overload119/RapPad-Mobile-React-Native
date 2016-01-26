@@ -2,23 +2,27 @@ import {COLORS} from '../constants/Colors';
 import React, {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 
 class RPButton extends React.Component {
+  static propTypes: {
+    disabled: React.PropTypes.bool
+  };
   render() {
     let innerNodes = this.props.children;
     if (typeof this.props.children === 'string') {
       innerNodes = (
-        <Text style={{color: COLORS.LIGHT_GRAY}}>
+        <Text style={{ color: COLORS.LIGHT_GRAY }}>
           {this.props.children}
         </Text>
       );
     }
 
     let styleByProps = {
+      opacity: this.props.disabled ? 0.5 : 1,
       backgroundColor: this.props.color || COLORS.PURPLE
     };
 
     return (
       <TouchableOpacity
-        onPress={this.props.onPress}
+        onPress={this.props.disabled ? null : this.props.onPress}
         style={[styles.button, this.props.style, styleByProps]}>
         {innerNodes}
       </TouchableOpacity>

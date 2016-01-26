@@ -1,9 +1,20 @@
-let basePath = 'http://localhost:3000/api';
+let basePath = 'http://192.168.1.6:3000/api';
+// Change to https://www.rappad.co/api to test on production.
 
-let API = {
-  login(data) {
-    return fetch(basePath + '/api/sessions/sign_in');
-  }
+const headers = {
+  'Accept': 'application/json',
+  'Content-Type': 'application/json',
 };
 
-export default API;
+export default API = {
+  login(data) {
+    return fetch(basePath + '/sessions/sign_in', {
+      method: 'POST',
+      headers: headers,
+      body: JSON.stringify({
+        login: data.login,
+        password: data.password
+      })
+    });
+  }
+};

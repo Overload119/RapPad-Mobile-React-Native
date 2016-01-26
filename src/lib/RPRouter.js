@@ -24,6 +24,13 @@ let RPRouter = {
         return require('../components/Login');
       }
     };
+  },
+  getDashboardRoute() {
+    return {
+      getSceneClass() {
+        return require('../components/Dashboard');
+      }
+    };
   }
 };
 

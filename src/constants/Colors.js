@@ -3,6 +3,7 @@ export const COLORS = {
   BLUE: '#105994',
   FORM: '222326',
   GRAY: '#88898C',
+  GRAY_DISABLED: '#6c6d70',
   GREEN: '#105639',
   LIGHT_GRAY: '#EEE',
   PURPLE: '#56457D',
