@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@exponent/react-native-navigator": "^0.3.7",
+    "@remobile/react-native-mongoose": "^1.0.0",
     "react": "^0.14.6",
     "react-native": "^0.17.0"
   },
