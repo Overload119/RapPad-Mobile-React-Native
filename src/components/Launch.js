@@ -15,6 +15,7 @@ class Launch extends React.Component {
     this.props.navigator.push(RPRouter.getRegisterRoute());
   }
   handlePressLogin() {
+    this.props.navigator.push(RPRouter.getLoginRoute());
   }
   render() {
     return (
@@ -38,7 +39,7 @@ class Launch extends React.Component {
         }}>
           <RPLink
             style={styles.authButton}
-            onPress={this.handlePressLogin}>
+            onPress={this.handlePressLogin.bind(this)}>
             Log In
           </RPLink>
           <RPLink
