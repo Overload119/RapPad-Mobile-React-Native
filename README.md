@@ -28,7 +28,7 @@ npm install
 
 1. `react-native start`
 2. `adb reverse tcp:8081 tcp:8081`
-3. `react-native run-android` to install the APK.
+3. `cd ./android && ./gradlew installDebug` to install the APK.
 
 ## Troubleshooting
 

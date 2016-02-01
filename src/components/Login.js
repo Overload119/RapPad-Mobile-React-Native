@@ -25,7 +25,7 @@ class Login extends React.Component {
       });
       let responseJSON = await response.json();
       if (response.status === 200) {
-        this.props.navigator.push(RPRouter.getDashboardRoute());
+        this.props.navigator.push(RPRouter.getHomeRoute());
         return;
       }
       this.setState({

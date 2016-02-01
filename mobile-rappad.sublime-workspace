@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"render",
+				"renderTabsAndroid"
+			],
+			[
+				"response",
+				"responseJSON"
+			],
+			[
+				"handleOn",
+				"handleOnLoginTextChanged"
+			],
+			[
+				"algin",
+				"alignItems"
+			],
+			[
+				"loginBUtt",
+				"loginButtonRight"
+			],
+			[
+				"loginButt",
+				"loginButtonLeft"
+			],
+			[
 				"handle",
 				"handlePressRegister"
 			],
@@ -490,30 +514,6 @@
 			[
 				"incoming",
 				"incoming_messages_ids_by_sender_id"
-			],
-			[
-				"current_sign",
-				"current_sign_in_ip	(user.rb)"
-			],
-			[
-				"handleClick",
-				"handleClickBeatItem"
-			],
-			[
-				"pollB",
-				"pollBlueprintTimer"
-			],
-			[
-				"verified",
-				"verifiedProducersPath	(route_helper.coffee)"
-			],
-			[
-				"perfor",
-				"performedSearched"
-			],
-			[
-				"best_tag",
-				"best_tag_slugs"
 			]
 		]
 	},
@@ -858,18 +858,27 @@
 	},
 	"file_history":
 	[
-		"/Users/amirsharif/mobile-rappad/android/app/src/main/AndroidManifest.xml",
-		"/Users/amirsharif/mobile-rappad/src/components/Register.js",
-		"/Users/amirsharif/mobile-rappad/package.json",
+		"/Users/amirsharif/mobile-rappad/android/settings.gradle",
+		"/Users/amirsharif/mobile-rappad/src/lib/RPRouter.js",
+		"/Users/amirsharif/mobile-rappad/src/components/Launch.js",
 		"/Users/amirsharif/mobile-rappad/index.android.js",
 		"/Users/amirsharif/mobile-rappad/src/components/App.js",
+		"/Users/amirsharif/Desktop/art.md",
+		"/Users/amirsharif/mobile-rappad/src/components/Login.js",
+		"/Users/amirsharif/mobile-rappad/src/lib/API.js",
+		"/Users/amirsharif/mobile-rappad/src/components/RPButton.js",
+		"/Users/amirsharif/mobile-rappad/src/components/Register.js",
+		"/Users/amirsharif/mobile-rappad/src/components/RPLink.js",
+		"/Users/amirsharif/mobile-rappad/index.ios.js",
+		"/Users/amirsharif/mobile-rappad/src/components/Register.ios.js",
+		"/Users/amirsharif/mobile-rappad/package.json",
 		"/Users/amirsharif/mobile-rappad/android/app/src/main/java/com/rappadmobile/MainActivity.java",
+		"/Users/amirsharif/mobile-rappad/android/app/src/main/AndroidManifest.xml",
 		"/Users/amirsharif/mobile-rappad/README.md",
 		"/Users/amirsharif/.bash_profile",
 		"/Users/amirsharif/mobile-rappad/src/scenes/launchScene.js",
 		"/Users/amirsharif/mobile-rappad/src/lib/RouteMapper.js",
 		"/Users/amirsharif/mobile-rappad/src/main.android.js",
-		"/Users/amirsharif/mobile-rappad/src/components/RPButton.js",
 		"/Users/amirsharif/mobile-rappad/src/constants/Colors.js",
 		"/Users/amirsharif/mobile-rappad/mobile-rappad.sublime-project",
 		"/Users/amirsharif/mobile-rappad/src/components/launch.js",
@@ -976,20 +985,11 @@
 		"/Users/amirsharif/rappad/db/migrate/20151211152026_add_rhyme_version_to_rhyme_set_grams.rb",
 		"/Users/amirsharif/rappad/db/migrate/20151113021235_create_rhyme_set_grams.rb",
 		"/Users/amirsharif/rappad/app/models/rhyme_set_gram.rb",
-		"/Users/amirsharif/rappad/app/models/rhyme.rb",
-		"/Users/amirsharif/rappad/lib/linguistics/corrections_6.txt",
-		"/Users/amirsharif/rappad/script/rip_beats.rb",
-		"/Users/amirsharif/rappad/lib/assets/freestyle_topics.txt",
-		"/Users/amirsharif/rappad/app/assets/javascripts/utils.coffee",
-		"/Users/amirsharif/rappad/app/assets/javascripts/components/editor/notes.jsx.coffee",
-		"/Users/amirsharif/rappad/app/assets/javascripts/components/radio_player_unit.jsx.coffee",
-		"/Users/amirsharif/rappad/vendor/assets/javascripts/ua.js",
-		"/Users/amirsharif/rappad/vendor/assets/javascripts/vendor.coffee",
-		"/Users/amirsharif/rappad/app/assets/javascripts/explore.jsx.coffee"
+		"/Users/amirsharif/rappad/app/models/rhyme.rb"
 	],
 	"find":
 	{
-		"height": 42.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -1054,9 +1054,26 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"styles",
+			"Register",
+			"requested",
+			"Register",
+			"debugger",
+			"30",
+			".bind",
+			"Bottom",
+			"column",
+			"var ",
+			"Colors",
+			"Register",
+			"TouchableHighlight",
+			"react-native-button",
+			"rappadmobile",
+			"native",
+			"BuildConfig",
 			"App",
 			"Launch",
 			"babel",
@@ -1167,24 +1184,7 @@
 			"^[a-z]{1,2} ",
 			"^[a-z]{1,2}",
 			"^[a-z]'",
-			"[a-z]'",
-			"^[a-z]'",
-			"$\\w{1}",
-			"\\w",
-			"File.open",
-			".read",
-			"IO.readlines",
-			"cmudict.txt",
-			"lingui",
-			"baggage",
-			"grudge",
-			"carrige",
-			"clutch",
-			"damage",
-			"courage",
-			"grudge",
-			"R AH\\d JH$",
-			"storage"
+			"[a-z]'"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1258,12 +1258,48 @@
 		"selected_items":
 		[
 			[
-				"packa",
-				"package.json"
+				"laucn",
+				"src/components/Launch.js"
 			],
 			[
 				"appjs",
 				"src/components/App.js"
+			],
+			[
+				"color",
+				"src/constants/Colors.js"
+			],
+			[
+				"rpbutt",
+				"src/components/RPButton.js"
+			],
+			[
+				"col",
+				"src/constants/Colors.js"
+			],
+			[
+				"rplink",
+				"src/components/RPLink.js"
+			],
+			[
+				"ind",
+				"index.ios.js"
+			],
+			[
+				"indexjs",
+				"index.android.js"
+			],
+			[
+				"launch",
+				"src/components/Launch.js"
+			],
+			[
+				"readme",
+				"README.md"
+			],
+			[
+				"packa",
+				"package.json"
 			],
 			[
 				"andoi",
@@ -1276,10 +1312,6 @@
 			[
 				"indexan",
 				"index.android.js"
-			],
-			[
-				"readme",
-				"README.md"
 			],
 			[
 				"appj",
@@ -1300,10 +1332,6 @@
 			[
 				"package",
 				"package.json"
-			],
-			[
-				"rplink",
-				"src/components/RPLink.js"
 			],
 			[
 				"rpbut",
@@ -1740,34 +1768,6 @@
 			[
 				"creathrmset",
 				"db/migrate/20151113021235_create_rhyme_set_grams.rb"
-			],
-			[
-				"cmudi",
-				"lib/linguistics/cmudict.txt"
-			],
-			[
-				"rhyme",
-				"app/models/rhyme.rb"
-			],
-			[
-				"rhyme.rb",
-				"app/models/rhyme.rb"
-			],
-			[
-				"rhymesetgram",
-				"app/models/rhyme_set_gram.rb"
-			],
-			[
-				"adduncomnword",
-				"db/migrate/20151231153250_add_uncommon_word_to_rhyme_set_gram.rb"
-			],
-			[
-				"frequ",
-				"lib/rhyme_engine/frequencer.rb"
-			],
-			[
-				"ignore",
-				".gitignore"
 			]
 		],
 		"width": 0.0

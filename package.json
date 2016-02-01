@@ -22,7 +22,9 @@
     "@exponent/react-native-navigator": "^0.3.7",
     "@remobile/react-native-mongoose": "^1.0.0",
     "react": "^0.14.6",
-    "react-native": "^0.17.0"
+    "react-native": "^0.17.0",
+    "react-native-android-tablayout": "0.0.12",
+    "react-native-vector-icons": "^1.1.0"
   },
   "devDependencies": {
     "eslint": "^1.10.3",
