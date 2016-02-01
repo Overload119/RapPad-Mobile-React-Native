@@ -19,17 +19,17 @@ class Login extends React.Component {
     Alert.alert('Alert Title', 'Requested.')
     this.setState({ isLoading: true });
     try {
-      let response = await API.login({
+      let res = await API.login({
         login: this.state.login,
         password: this.state.password
       });
-      let responseJSON = await response.json();
-      if (response.status === 200) {
+      if (res.response.status === 200 ) {
+        API.saveSession(res.response);
         this.props.navigator.push(RPRouter.getHomeRoute());
         return;
       }
       this.setState({
-        error: responseJSON.message,
+        error: res.response.message,
         isLoading: false
       });
     }

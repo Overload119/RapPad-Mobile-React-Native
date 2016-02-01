@@ -29,6 +29,14 @@ npm install
 1. `react-native start`
 2. `adb reverse tcp:8081 tcp:8081`
 3. `cd ./android && ./gradlew installDebug` to install the APK.
+4. `react-native run-ios` to start up an iOS emulator.
+
+### Upgrading
+
+React Native is under active development, and we want to keep up with it.
+
+1. `react-native upgrade`
+2. `rnpm link` which will add the native modules back.
 
 ## Troubleshooting
 

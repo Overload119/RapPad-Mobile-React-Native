@@ -32,7 +32,7 @@ class App extends Component {
     // if logged in, don't show launch, but show dashboard.
     return (
       <ExNavigator
-        initialRoute={RPRouter.getHomeRoute()}
+        initialRoute={RPRouter.getLaunchRoute()}
         showNavigationBar={false}
       />
     );

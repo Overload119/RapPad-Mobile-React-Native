@@ -38,7 +38,7 @@ export default class Home extends React.Component {
         selectedTabIndicatorColor={COLORS.PURPLE}>
         <Tab
           name="Dashboard"
-          textColor={this.tabTextColor(0)}
+          textColor={'#FFF'}
         />
         <Tab
           name="Explore"
@@ -71,14 +71,13 @@ export default class Home extends React.Component {
 const styles = StyleSheet.create({
   home: {
     backgroundColor: COLORS.BASE,
+    flex: 0.1,
+    flexDirection: 'column'
   },
   tabBar: {
-    flex: 1
   },
   viewPager: {
-    flex: 1,
-    height: 200,
-    backgroundColor: COLORS.BASE
+    flex: 1
   }
 });
 

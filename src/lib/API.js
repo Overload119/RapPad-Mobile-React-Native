@@ -1,20 +1,33 @@
-let basePath = 'http://192.168.1.6:3000/api';
-// Change to https://www.rappad.co/api to test on production.
+import Frisbee from 'frisbee';
 
-const headers = {
-  'Accept': 'application/json',
-  'Content-Type': 'application/json',
-};
+let userSession = {};
+
+const api = new Frisbee({
+  baseURI: 'https://www.rappad.co/api',
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+  }
+});
 
 export default API = {
+  clearSession() {
+    userSession = {};
+  },
+  saveSession(response) {
+    userSession.user_token = response.auth_token;
+    userSession.user_email = response.email;
+  },
   login(data) {
-    return fetch(basePath + '/sessions/sign_in', {
-      method: 'POST',
-      headers: headers,
+    return api.post('/sessions/sign_in', {
       body: JSON.stringify({
         login: data.login,
         password: data.password
       })
     });
+  },
+  getUserRaps(data) {
+    Object.assign(data, userSession);
+    return api.get('/raps', data);
   }
 };
