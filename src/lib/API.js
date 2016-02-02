@@ -1,6 +1,8 @@
+import React, {Alert} from 'react-native';
 import Frisbee from 'frisbee';
+import qs from 'qs';
 
-let userSession = {};
+import RPStorage from './RPStorage';
 
 const api = new Frisbee({
   baseURI: 'https://www.rappad.co/api',
@@ -11,13 +13,6 @@ const api = new Frisbee({
 });
 
 export default API = {
-  clearSession() {
-    userSession = {};
-  },
-  saveSession(response) {
-    userSession.user_token = response.auth_token;
-    userSession.user_email = response.email;
-  },
   login(data) {
     return api.post('/sessions/sign_in', {
       body: JSON.stringify({
@@ -26,8 +21,8 @@ export default API = {
       })
     });
   },
-  getUserRaps(data) {
-    Object.assign(data, userSession);
-    return api.get('/raps', data);
+  getUserRaps(params) {
+    path = '/raps?' + qs.stringify(params, { encode: false });
+    return api.get(path);
   }
 };

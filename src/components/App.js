@@ -1,12 +1,13 @@
-import React, {Component, PropTypes, Platform, StyleSheet, Text, View} from 'react-native';
+import React, {Component, PropTypes, Platform, StyleSheet, Text, View, Alert} from 'react-native';
 import ExNavigator from '@exponent/react-native-navigator';
 
-import Launch from './Launch.js';
-import Register from './Register.js';
-import RPRouter from '../lib/RPRouter.js';
+import Home from './Home';
+import Launch from './Launch';
+import RPRouter from '../lib/RPRouter';
+import RPStorage from '../lib/RPStorage';
 import {COLORS} from '../constants/Colors';
 
-class App extends Component {
+export default class App extends Component {
   static propTypes = {
     instructions: PropTypes.string,
   };
@@ -21,15 +22,10 @@ class App extends Component {
 
     this.state = {
       platform: Platform.OS,
+      isLoggedIn: false
     };
   }
-
   render() {
-    const { instructions } = this.props;
-    let { platform } = this.state;
-
-    // TODO - if logged in, show navigation bar
-    // if logged in, don't show launch, but show dashboard.
     return (
       <ExNavigator
         initialRoute={RPRouter.getLaunchRoute()}
@@ -39,5 +35,4 @@ class App extends Component {
   }
 }
 
-export default App;
 module.exports = App;

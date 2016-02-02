@@ -1,10 +1,12 @@
 import React, {View, StyleSheet, Text, Alert} from 'react-native';
-import {COLORS} from '../constants/Colors';
+
 import API from '../lib/API';
-import RPTextInput from './RPTextInput'
 import RPButton from './RPButton'
 import RPLink from './RPLink'
-import RPRouter from '../lib/RPRouter.js';
+import RPRouter from '../lib/RPRouter';
+import RPStorage from '../lib/RPStorage';
+import RPTextInput from './RPTextInput'
+import {COLORS} from '../constants/Colors';
 
 class Login extends React.Component {
   constructor(props) {
@@ -16,20 +18,19 @@ class Login extends React.Component {
     }
   }
   async requestLogin() {
-    Alert.alert('Alert Title', 'Requested.')
     this.setState({ isLoading: true });
     try {
-      let res = await API.login({
+      let request = await API.login({
         login: this.state.login,
         password: this.state.password
       });
-      if (res.response.status === 200 ) {
-        API.saveSession(res.response);
+      if (request.response.status === 200 ) {
+        await RPStorage.setUserSession(request.body);
         this.props.navigator.push(RPRouter.getHomeRoute());
         return;
       }
       this.setState({
-        error: res.response.message,
+        error: request.body,
         isLoading: false
       });
     }

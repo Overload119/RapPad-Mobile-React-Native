@@ -38,7 +38,7 @@ export default class Home extends React.Component {
         selectedTabIndicatorColor={COLORS.PURPLE}>
         <Tab
           name="Dashboard"
-          textColor={'#FFF'}
+          textColor={this.tabTextColor(0)}
         />
         <Tab
           name="Explore"
