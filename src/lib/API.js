@@ -12,6 +12,9 @@ const api = new Frisbee({
   }
 });
 
+// All requests must have the userSession attached to it, except
+// auth endpoints.
+
 export default API = {
   login(data) {
     return api.post('/sessions/sign_in', {
@@ -21,8 +24,16 @@ export default API = {
       })
     });
   },
-  getUserRaps(params) {
+  async getUserRaps(params) {
+    let userSession = await RPStorage.getUserSession();
+    Object.assign(params, userSession);
     path = '/raps?' + qs.stringify(params, { encode: false });
+    return api.get(path);
+  },
+  async getDiscussParams(params = {}) {
+    let userSession = await RPStorage.getUserSession();
+    Object.assign(params, userSession);
+    path = '/discuss?' + qs.stringify(params, { encode: false });
     return api.get(path);
   }
 };

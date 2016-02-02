@@ -28,6 +28,7 @@ export default RPStorage = {
     });
   },
   getUserSession() {
+    // Never expires.
     return storage.load({
       key: 'userSession',
       autoSync: false
@@ -35,8 +36,6 @@ export default RPStorage = {
   },
   async loadCurrentUserRaps(params) {
     let key = 'currentUserRaps/' + qs.stringify(params);
-    let userSession = await this.getUserSession();
-    Object.assign(params, userSession);
 
     storage.sync[key] = async function(data) {
       let request = await API.getUserRaps(params);
