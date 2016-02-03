@@ -44,7 +44,7 @@ export default class Home extends React.Component {
           icon={this.state.dashboardIcon}
           selected={this.state.tabPosition === 0}
           onPress={this.handlePressTab.bind(this, 0)}>
-          <Dashboard />
+          <Dashboard navigator={this.props.navigator} />
         </TabBarIOS.Item>
         <TabBarIOS.Item
           title="Explore"

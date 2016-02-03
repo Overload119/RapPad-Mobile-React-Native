@@ -60,7 +60,7 @@ export default class Home extends React.Component {
           style={styles.viewPager}
           ref={viewPager => { this.viewPager = viewPager; }}
           onPageSelected={this.handleTabSelect.bind(this)}>
-          <Dashboard />
+          <Dashboard navigator={this.props.navigator} />
           <View><Text>Tab2</Text></View>
           <Forum />
         </ViewPagerAndroid>

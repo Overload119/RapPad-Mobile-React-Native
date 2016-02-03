@@ -35,5 +35,10 @@ export default API = {
     Object.assign(params, userSession);
     path = '/discuss?' + qs.stringify(params, { encode: false });
     return api.get(path);
+  },
+  getRhymes(params = {}) {
+    path = '/freestyle/rhymes?' + qs.stringify(params, { encode: true });
+    console.log(path);
+    return api.get(path);
   }
 };

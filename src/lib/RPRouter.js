@@ -1,3 +1,4 @@
+import React from 'react-native';
 import ExNavigator, { SceneConfigs } from '@exponent/react-native-navigator';
 
 let RPRouter = {
@@ -24,6 +25,14 @@ let RPRouter = {
         return require('../components/Login');
       }
     };
+  },
+  getEditorRoute(rap) {
+    return {
+      renderScene(navigator) {
+        let Editor = require('../components/Editor');
+        return <Editor navigator={navigator} rap={rap} />;
+      }
+    }
   },
   getHomeRoute() {
     return {

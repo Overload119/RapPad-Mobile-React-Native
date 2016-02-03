@@ -34,6 +34,25 @@ export default RPStorage = {
       autoSync: false
     })
   },
+  async getRhymes(params) {
+    let key = 'rhymes/' + qs.stringify(params);
+
+    storage.sync[key] = async function(_) {
+      let request = await API.getRhymes(params);
+
+      storage.save({
+        key: key,
+        rawData: request.body,
+        expires: Durations.HOUR
+      });
+
+      return request.body;
+    };
+
+    return storage.load({
+      key: key
+    });
+  },
   async loadCurrentUserRaps(params) {
     let key = 'currentUserRaps/' + qs.stringify(params);
 
