@@ -3,7 +3,7 @@
 **/
 
 import React, {
-  View, Text, Platform, StyleSheet, TabBarIOS, StatusBarIOS
+  View, Text, StyleSheet, TabBarIOS, StatusBarIOS
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 

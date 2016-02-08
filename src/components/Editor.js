@@ -2,6 +2,7 @@ import React, {
   Component, TextInput, StyleSheet, Text, View, Alert, BackAndroid, Platform,
   ScrollView, NetInfo
 } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 import Home from './Home';
 import Launch from './Launch';
@@ -10,6 +11,7 @@ import RPStorage from '../lib/RPStorage';
 import API from '../lib/API';
 import RPTextInput from './RPTextInput';
 import RPButton from './RPButton';
+import RPLink from './RPLink';
 import {COLORS} from '../constants/Colors';
 import {GlobalStyles} from '../constants/GlobalStyles';
 
@@ -91,6 +93,9 @@ export default class Editor extends Component {
       return prevState;
     });
   }
+  handlePressBack() {
+    this.props.navigator.pop();
+  }
   renderRhymeSuggestions() {
     if (this.state.rhymeResult.length > 0) {
       return (
@@ -136,6 +141,7 @@ export default class Editor extends Component {
   }
   render() {
     let connectionBar = null;
+    let backButtonIOS = null;
     if (!this.state.isConnected) {
       connectionBar = (
         <Text style={styles.connectionBar}>
@@ -144,9 +150,22 @@ export default class Editor extends Component {
       )
     }
 
+    if (Platform.OS === 'ios') {
+      backButtonIOS = (
+        <RPLink
+          onPress={this.handlePressBack.bind(this)}
+          style={styles.iosBack}>
+          <Text>
+            <Icon name="chevron-left" size={20} color={COLORS.YELLOW} />
+          </Text>
+        </RPLink>
+      )
+    }
+
     return (
       <View style={{flex: 1}}>
         <View style={styles.topBar}>
+          {backButtonIOS}
           <RPTextInput
             style={styles.title}
             onChangeText={this.handleChangeTitle.bind(this)}
@@ -181,6 +200,15 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.RED,
     color: COLORS.WHITE,
     textAlign: 'center',
+  },
+  iosBack: {
+    height: 40,
+    lineHeight: 30,
+    paddingLeft: 8,
+    paddingRight: 8,
+    textAlign: 'center',
+    borderRightWidth: 1,
+    borderRightColor: COLORS.FORM
   },
   title: {
     flex: 1,

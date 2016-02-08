@@ -10,7 +10,7 @@ const Durations = {
 }
 
 let storage = new Storage({
-  size: 1000,
+  size: 10000,
   enableCache: true,
   defaultExpires: Durations.DAY, // 1 day
   sync: {}
@@ -52,6 +52,15 @@ export default RPStorage = {
     return storage.load({
       key: key
     });
+  },
+  async loadLocalRaps(params) {
+    let key = 'currentUserLocalRaps/' + qs.stringify(params);
+    return storage.load({
+      key: key
+    });
+  },
+  async loadRap(params) {
+    let key = 'rap/' + qs.stringify(params);
   },
   async loadCurrentUserRaps(params) {
     let key = 'currentUserRaps/' + qs.stringify(params);

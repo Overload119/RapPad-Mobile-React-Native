@@ -46,7 +46,9 @@ class Dashboard extends React.Component {
     this.props.navigator.push(RPRouter.getEditorRoute(rap));
   }
   handlePressRap(rap) {
-    this.props.navigator.push(RPRouter.getEditorRoute(rap));
+    let clonedRap = {};
+    Object.assign(clonedRap, rap)
+    this.props.navigator.push(RPRouter.getEditorRoute(clonedRap));
   }
   renderRapRow(rap) {
     return (
