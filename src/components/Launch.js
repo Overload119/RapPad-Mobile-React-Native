@@ -17,6 +17,24 @@ class Launch extends React.Component {
   handlePressLogin() {
     this.props.navigator.push(RPRouter.getLoginRoute());
   }
+  async componentDidMount() {
+    Animated.sequence([
+      Animated.timing(this.state.opacityValue, { duration: 1000, toValue: 1 }),
+      Animated.timing(
+        this.state.bottomYOffsetValue,
+        { duration: 1000, toValue: 0 }
+      ),
+    ]).start();
+
+    try {
+      let session = await RPStorage.getUserSession();
+      if (session && session.user_token && session.user_email) {
+        this.props.navigator.push(RPRouter.getHomeRoute());
+      }
+    } catch (err) {
+      // not found
+    }
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -50,15 +68,6 @@ class Launch extends React.Component {
         </Animated.View>
       </View>
     );
-  }
-  componentDidMount() {
-    Animated.sequence([
-      Animated.timing(this.state.opacityValue, { duration: 1000, toValue: 1 }),
-      Animated.timing(
-        this.state.bottomYOffsetValue,
-        { duration: 1000, toValue: 0 }
-      ),
-    ]).start();
   }
 }
 

@@ -1,20 +1,28 @@
-let basePath = 'http://192.168.1.6:3000/api';
-// Change to https://www.rappad.co/api to test on production.
+import React, {Alert} from 'react-native';
+import Frisbee from 'frisbee';
+import qs from 'qs';
 
-const headers = {
-  'Accept': 'application/json',
-  'Content-Type': 'application/json',
-};
+import RPStorage from './RPStorage';
+
+const api = new Frisbee({
+  baseURI: 'https://www.rappad.co/api',
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+  }
+});
 
 export default API = {
   login(data) {
-    return fetch(basePath + '/sessions/sign_in', {
-      method: 'POST',
-      headers: headers,
+    return api.post('/sessions/sign_in', {
       body: JSON.stringify({
         login: data.login,
         password: data.password
       })
     });
+  },
+  getUserRaps(params) {
+    path = '/raps?' + qs.stringify(params, { encode: false });
+    return api.get(path);
   }
 };

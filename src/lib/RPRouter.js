@@ -25,6 +25,13 @@ let RPRouter = {
       }
     };
   },
+  getHomeRoute() {
+    return {
+      getSceneClass() {
+        return require('../components/Home');
+      }
+    };
+  },
   getDashboardRoute() {
     return {
       getSceneClass() {
