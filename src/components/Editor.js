@@ -1,6 +1,6 @@
 import React, {
   Component, TextInput, StyleSheet, Text, View, Alert, BackAndroid, Platform,
-  ScrollView
+  ScrollView, NetInfo
 } from 'react-native';
 
 import Home from './Home';
@@ -21,7 +21,8 @@ export default class Editor extends Component {
       rap: props.rap,
       showRhymes: true,
       rhymeResult: [],
-      rhymeWord: ''
+      rhymeWord: '',
+      isConnected: false
     }
   }
   componentWillUnmount() {
@@ -29,6 +30,10 @@ export default class Editor extends Component {
       clearTimeout(this.rhymeTimer);
       this.rhymeTimer = null;
     }
+    NetInfo.isConnected.removeEventListener(
+      'change',
+      this.handleConnectivityChange
+    )
   }
   componentDidMount() {
     if (Platform.OS === 'android') {
@@ -39,6 +44,18 @@ export default class Editor extends Component {
       });
       return false;
     }
+
+    NetInfo.isConnected.fetch().done((isConnected) => {
+      this.handleConnectivityChange(isConnected);
+    });
+
+    NetInfo.isConnected.addEventListener(
+      'change',
+      this.handleConnectivityChange.bind(this)
+    )
+  }
+  handleConnectivityChange(isConnected) {
+    this.setState({ isConnected: isConnected });
   }
   handleChangeTitle(text) {
     this.setState((prevState) => {
@@ -47,22 +64,14 @@ export default class Editor extends Component {
     });
   }
   async performRhymeRequest() {
-    // Attempt to get the last legible word.
     let lastLine = this.state.rap.lyrics.trim().split('\n').pop();
     let wordCandidates = lastLine.split(' ');
-    let lastWord = '';
-
-    // Start from the last words of the last line.
-    for (let i = wordCandidates.length - 1; i > 0; i--) {
-      if (!wordCandidates[i].trim().match(/[^A-Za-z'\.,!?\/]/g, '')) {
-        lastWord = wordCandidates[i];
-        break;
-      }
-    }
+    let lastWord = wordCandidates.pop().trim();
 
     if (!lastWord || lastWord === '') {
       return;
     }
+
     let rhymes = await RPStorage.getRhymes({ term: lastWord });
     this.setState({ rhymeResult: rhymes, rhymeWord: lastWord });
   }
@@ -104,26 +113,37 @@ export default class Editor extends Component {
     )
   }
   renderRhymeBox() {
+    if (!this.state.showRhymes) {
+      return null;
+    }
+
     headerText =
       this.state.rhymeWord === '' ?
       'RHYME SUGGESTIONS' :
       `RHYME SUGGESTIONS FOR "${this.state.rhymeWord.toUpperCase()}"`;
-    if (this.state.showRhymes) {
-      return (
-        <View style={styles.rhymeBox}>
-          <Text style={[
-            GlobalStyles.marginBottom,
-            GlobalStyles.white
-            ]}>
-            {headerText}
-          </Text>
-          {this.renderRhymeSuggestions()}
-        </View>
-      );
-    }
-    return null;
+
+    return (
+      <View style={styles.rhymeBox}>
+        <Text style={[
+          GlobalStyles.marginBottom,
+          GlobalStyles.white
+          ]}>
+          {headerText}
+        </Text>
+        {this.renderRhymeSuggestions()}
+      </View>
+    );
   }
   render() {
+    let connectionBar = null;
+    if (!this.state.isConnected) {
+      connectionBar = (
+        <Text style={styles.connectionBar}>
+          No Internet detected. Changes will be local only.
+        </Text>
+      )
+    }
+
     return (
       <View style={{flex: 1}}>
         <View style={styles.topBar}>
@@ -134,12 +154,13 @@ export default class Editor extends Component {
           />
           <RPButton
             style={styles.saveButton}>
-            <Text style={[GlobalStyles.white, GlobalStyles.textCenter]}>
+            <Text style={[styles.saveButtonText]}>
               Save
             </Text>
           </RPButton>
         </View>
         <View style={GlobalStyles.divider} />
+        {connectionBar}
         <RPTextInput
           onChangeText={this.handleChangeLyrics.bind(this)}
           style={styles.lyrics}
@@ -154,12 +175,24 @@ export default class Editor extends Component {
 }
 
 const styles = StyleSheet.create({
+  connectionBar: {
+    paddingTop: 8,
+    paddingBottom: 8,
+    backgroundColor: COLORS.RED,
+    color: COLORS.WHITE,
+    textAlign: 'center',
+  },
   title: {
     flex: 1,
   },
   saveButton: {
     width: 80,
     height: 40
+  },
+  saveButtonText: {
+    color: COLORS.WHITE,
+    textAlign: 'center',
+    lineHeight: 20
   },
   topBar: {
     flexDirection: 'row',
@@ -169,7 +202,8 @@ const styles = StyleSheet.create({
     flex: 1,
     textAlign: 'left',
     textAlignVertical: 'top',
-    lineHeight: 16
+    lineHeight: 16,
+    padding: 8
   },
   rhymeBox: {
     flex: 0.5,
