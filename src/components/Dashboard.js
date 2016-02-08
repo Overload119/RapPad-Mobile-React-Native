@@ -4,17 +4,18 @@
 
 import React,
 {
-  View, Text, StyleSheet, RefreshControl, TouchableWithoutFeedback, ScrollView,
+  View, Text, StyleSheet, RefreshControl, TouchableOpacity, ScrollView,
   Alert, Image
 }
 from 'react-native';
 import moment from 'moment';
 
+import API from '../lib/API'
+import RPImage from './RPImage'
+import RPLink from './RPLink'
+import RPRouter from '../lib/RPRouter'
 import {COLORS} from '../constants/Colors'
 import {GlobalStyles} from '../constants/GlobalStyles'
-import API from '../lib/API'
-import RPLink from './RPLink'
-import RPImage from './RPImage'
 
 class Dashboard extends React.Component {
   constructor(props) {
@@ -37,9 +38,21 @@ class Dashboard extends React.Component {
     } catch (error) {
     }
   }
+  handlePressNew() {
+    let rap = {
+      title: 'Untitled Rap',
+      lyrics: ''
+    }
+    this.props.navigator.push(RPRouter.getEditorRoute(rap));
+  }
+  handlePressRap(rap) {
+    this.props.navigator.push(RPRouter.getEditorRoute(rap));
+  }
   renderRapRow(rap) {
     return (
-      <TouchableWithoutFeedback key={rap.id}>
+      <TouchableOpacity
+        key={rap.id}
+        onPress={this.handlePressRap.bind(this, rap)}>
         <View style={styles.row}>
           <RPImage
             style={styles.rowImage}
@@ -53,7 +66,7 @@ class Dashboard extends React.Component {
             </Text>
           </View>
         </View>
-      </TouchableWithoutFeedback>
+      </TouchableOpacity>
     );
   }
   renderLoader() {
@@ -79,7 +92,7 @@ class Dashboard extends React.Component {
         </View>
         {this.state.isLoading ?
           this.renderLoader() :
-          this.state.raps.map(this.renderRapRow)}
+          this.state.raps.map(this.renderRapRow.bind(this))}
       </ScrollView>
     );
   }

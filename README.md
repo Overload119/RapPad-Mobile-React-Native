@@ -45,3 +45,7 @@ Below you'll find the issues we ran into and the fixes we found for them.
 ### Unable to download JS bundle
 
 Make sure you ran the `adb reverse` command. Restarting your computer can help sometimes. Hit Crt+M to reload JS.
+
+### I accidentally deleted some shit.
+
+1. `react-native upgrade` will rebuild most files.

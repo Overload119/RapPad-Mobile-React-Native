@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"defaut",
+				"defaultSource"
+			],
+			[
+				"default",
+				"defaultSource"
+			],
+			[
+				"getUser",
+				"getUserSession"
+			],
+			[
+				"getuser",
+				"getUserSession	(RPStorage.js)"
+			],
+			[
 				"render",
 				"renderTabsAndroid"
 			],
@@ -48,10 +64,6 @@
 				"deviceWidth"
 			],
 			[
-				"default",
-				"defaultStyles"
-			],
-			[
 				"twitter",
 				"twitter_followers"
 			],
@@ -94,10 +106,6 @@
 			[
 				"unusu",
 				"unusual_words"
-			],
-			[
-				"getUser",
-				"getUserMedia"
 			],
 			[
 				"SCUpload",
@@ -506,14 +514,6 @@
 			[
 				"recipient",
 				"recipient_id"
-			],
-			[
-				"recipi",
-				"recipient_id"
-			],
-			[
-				"incoming",
-				"incoming_messages_ids_by_sender_id"
 			]
 		]
 	},
@@ -858,28 +858,33 @@
 	},
 	"file_history":
 	[
-		"/Users/amirsharif/mobile-rappad/android/settings.gradle",
+		"/Users/amirsharif/mobile-rappad/src/components/Dashboard.js",
+		"/Users/amirsharif/mobile-rappad/src/components/RPImage.js",
 		"/Users/amirsharif/mobile-rappad/src/lib/RPRouter.js",
-		"/Users/amirsharif/mobile-rappad/src/components/Launch.js",
-		"/Users/amirsharif/mobile-rappad/index.android.js",
+		"/Users/amirsharif/mobile-rappad/src/constants/Colors.js",
 		"/Users/amirsharif/mobile-rappad/src/components/App.js",
-		"/Users/amirsharif/Desktop/art.md",
 		"/Users/amirsharif/mobile-rappad/src/components/Login.js",
+		"/Users/amirsharif/mobile-rappad/src/components/Launch.js",
+		"/Users/amirsharif/mobile-rappad/src/components/Home.android.js",
+		"/Users/amirsharif/mobile-rappad/README.md",
+		"/Users/amirsharif/mobile-rappad/package.json",
+		"/Users/amirsharif/mobile-rappad/src/constants/GlobalStyles.js",
+		"/Users/amirsharif/mobile-rappad/node_modules/react-native/packager/react-packager/src/Resolver/polyfills/require.js",
+		"/Users/amirsharif/mobile-rappad/android/settings.gradle",
 		"/Users/amirsharif/mobile-rappad/src/lib/API.js",
+		"/Users/amirsharif/mobile-rappad/index.android.js",
+		"/Users/amirsharif/Desktop/art.md",
 		"/Users/amirsharif/mobile-rappad/src/components/RPButton.js",
 		"/Users/amirsharif/mobile-rappad/src/components/Register.js",
 		"/Users/amirsharif/mobile-rappad/src/components/RPLink.js",
 		"/Users/amirsharif/mobile-rappad/index.ios.js",
 		"/Users/amirsharif/mobile-rappad/src/components/Register.ios.js",
-		"/Users/amirsharif/mobile-rappad/package.json",
 		"/Users/amirsharif/mobile-rappad/android/app/src/main/java/com/rappadmobile/MainActivity.java",
 		"/Users/amirsharif/mobile-rappad/android/app/src/main/AndroidManifest.xml",
-		"/Users/amirsharif/mobile-rappad/README.md",
 		"/Users/amirsharif/.bash_profile",
 		"/Users/amirsharif/mobile-rappad/src/scenes/launchScene.js",
 		"/Users/amirsharif/mobile-rappad/src/lib/RouteMapper.js",
 		"/Users/amirsharif/mobile-rappad/src/main.android.js",
-		"/Users/amirsharif/mobile-rappad/src/constants/Colors.js",
 		"/Users/amirsharif/mobile-rappad/mobile-rappad.sublime-project",
 		"/Users/amirsharif/mobile-rappad/src/components/launch.js",
 		"/Users/amirsharif/mobile-rappad/node_modules/react-native/node_modules/yeoman-generator/node_modules/cli-table/node_modules/colors/ReadMe.md",
@@ -980,12 +985,7 @@
 		"/Users/amirsharif/rappad/lib/linguistics/corrections_5.txt",
 		"/Users/amirsharif/rappad/app/views/blog/how-to-diss-someone-in-battle-rap.md",
 		"/Users/amirsharif/rappad/script/rhymes/sync_unusual_words.rb",
-		"/Users/amirsharif/rappad/lib/linguistics/corrections_2.txt",
-		"/Users/amirsharif/rappad/lib/linguistics/unusual_words.txt",
-		"/Users/amirsharif/rappad/db/migrate/20151211152026_add_rhyme_version_to_rhyme_set_grams.rb",
-		"/Users/amirsharif/rappad/db/migrate/20151113021235_create_rhyme_set_grams.rb",
-		"/Users/amirsharif/rappad/app/models/rhyme_set_gram.rb",
-		"/Users/amirsharif/rappad/app/models/rhyme.rb"
+		"/Users/amirsharif/rappad/lib/linguistics/corrections_2.txt"
 	],
 	"find":
 	{
@@ -1057,6 +1057,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"platform",
+			"image",
+			"data",
+			"request.response",
+			"request.",
+			".js",
+			"request",
+			"res",
+			".json",
+			"try",
+			"../",
+			"register",
+			"launch",
+			"import Colors from '../constants/colors'",
 			"styles",
 			"Register",
 			"requested",
@@ -1170,21 +1184,7 @@
 			"@_player",
 			"css",
 			"force_ssl",
-			"ogg",
-			"local",
-			"redirect",
-			"write",
-			"3z3O7DeExzk",
-			"hat",
-			"zip",
-			"^[a-z]{3} ",
-			"[a-z]{3} ",
-			"[a-z] ",
-			"d",
-			"^[a-z]{1,2} ",
-			"^[a-z]{1,2}",
-			"^[a-z]'",
-			"[a-z]'"
+			"ogg"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1258,12 +1258,72 @@
 		"selected_items":
 		[
 			[
-				"laucn",
+				"appjs",
+				"src/components/App.js"
+			],
+			[
+				"launch",
 				"src/components/Launch.js"
 			],
 			[
-				"appjs",
-				"src/components/App.js"
+				"loginjs",
+				"src/components/Login.js"
+			],
+			[
+				"homeandroi",
+				"src/components/Home.android.js"
+			],
+			[
+				"homeio",
+				"src/components/Home.ios.js"
+			],
+			[
+				"rprouter",
+				"src/lib/RPRouter.js"
+			],
+			[
+				"lau",
+				"src/components/Launch.js"
+			],
+			[
+				"rout",
+				"src/lib/RPRouter.js"
+			],
+			[
+				"packjson",
+				"package.json"
+			],
+			[
+				"api",
+				"src/lib/API.js"
+			],
+			[
+				"login",
+				"src/components/Login.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"readme",
+				"README.md"
+			],
+			[
+				"apijs",
+				"src/lib/API.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"colorsjs",
+				"src/constants/Colors.js"
+			],
+			[
+				"laucn",
+				"src/components/Launch.js"
 			],
 			[
 				"color",
@@ -1290,24 +1350,8 @@
 				"index.android.js"
 			],
 			[
-				"launch",
-				"src/components/Launch.js"
-			],
-			[
-				"readme",
-				"README.md"
-			],
-			[
-				"packa",
-				"package.json"
-			],
-			[
 				"andoi",
 				"index.android.js"
-			],
-			[
-				"pack",
-				"package.json"
 			],
 			[
 				"indexan",
@@ -1724,50 +1768,6 @@
 			[
 				"genevide",
 				"script/generate_lyric_video.js"
-			],
-			[
-				"apiimconrt",
-				"app/controllers/api/impressions_controller.rb"
-			],
-			[
-				"soureco",
-				"app/assets/javascripts/components/editor/soundcloud_recorder.jsx.coffee"
-			],
-			[
-				"corre",
-				"lib/linguistics/corrections_5.txt"
-			],
-			[
-				"correct",
-				"script/rhymes/correction.rb"
-			],
-			[
-				"userhelper",
-				"app/helpers/user_helper.rb"
-			],
-			[
-				"blogindex",
-				"app/views/blog/index.slim"
-			],
-			[
-				"hostebeat",
-				"app/services/beats/hosted_beat_store.rb"
-			],
-			[
-				"hostbed",
-				"app/views/blog/how-to-diss-someone-in-battle-rap.md"
-			],
-			[
-				"sync",
-				"script/rhymes/sync_unusual_words.rb"
-			],
-			[
-				"addversi",
-				"db/migrate/20151211152026_add_rhyme_version_to_rhyme_set_grams.rb"
-			],
-			[
-				"creathrmset",
-				"db/migrate/20151113021235_create_rhyme_set_grams.rb"
 			]
 		],
 		"width": 0.0

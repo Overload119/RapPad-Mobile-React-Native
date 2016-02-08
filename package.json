@@ -21,6 +21,7 @@
   "dependencies": {
     "@exponent/react-native-navigator": "^0.3.7",
     "@remobile/react-native-mongoose": "^1.0.0",
+    "es6-react-mixins": "^0.2.1",
     "frisbee": "^0.2.0",
     "moment": "^2.11.1",
     "qs": "^6.0.2",

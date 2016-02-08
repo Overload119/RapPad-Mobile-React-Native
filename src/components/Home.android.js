@@ -7,8 +7,9 @@ import React, {
 } from 'react-native';
 import {Tab, TabLayout} from 'react-native-android-tablayout'
 
-import {COLORS} from '../constants/Colors'
-import Dashboard from './Dashboard'
+import {COLORS} from '../constants/Colors';
+import Dashboard from './Dashboard';
+import Forum from './Forum';
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -59,9 +60,9 @@ export default class Home extends React.Component {
           style={styles.viewPager}
           ref={viewPager => { this.viewPager = viewPager; }}
           onPageSelected={this.handleTabSelect.bind(this)}>
-          <Dashboard />
+          <Dashboard navigator={this.props.navigator} />
           <View><Text>Tab2</Text></View>
-          <View><Text>Tab3</Text></View>
+          <Forum />
         </ViewPagerAndroid>
       </View>
     );

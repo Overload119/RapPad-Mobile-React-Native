@@ -8,7 +8,8 @@ class Launch extends React.Component {
     super(props)
     this.state = {
       opacityValue: new Animated.Value(0),
-      bottomYOffsetValue: new Animated.Value(-80)
+      bottomYOffsetValue: new Animated.Value(-80),
+      isLoggedIn: false
     };
   }
   handlePressRegister() {
@@ -18,6 +19,15 @@ class Launch extends React.Component {
     this.props.navigator.push(RPRouter.getLoginRoute());
   }
   async componentDidMount() {
+    try {
+      let session = await RPStorage.getUserSession();
+      if (session && session.user_token && session.user_email) {
+        this.setState({ isLoggedIn: true });
+      }
+    } catch (err) {
+      // session not found
+    }
+
     Animated.sequence([
       Animated.timing(this.state.opacityValue, { duration: 1000, toValue: 1 }),
       Animated.timing(
@@ -25,17 +35,13 @@ class Launch extends React.Component {
         { duration: 1000, toValue: 0 }
       ),
     ]).start();
-
-    try {
-      let session = await RPStorage.getUserSession();
-      if (session && session.user_token && session.user_email) {
-        this.props.navigator.push(RPRouter.getHomeRoute());
-      }
-    } catch (err) {
-      // not found
-    }
   }
   render() {
+    if (this.state.isLoggedIn) {
+      let Home = require('../components/Home');
+      return <Home navigator={this.props.navigator}/>;
+    }
+
     return (
       <View style={styles.container}>
         <Animated.Image

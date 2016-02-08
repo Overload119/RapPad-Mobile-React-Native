@@ -28,15 +28,33 @@ export default RPStorage = {
     });
   },
   getUserSession() {
+    // Never expires.
     return storage.load({
       key: 'userSession',
       autoSync: false
     })
   },
+  async getRhymes(params) {
+    let key = 'rhymes/' + qs.stringify(params);
+
+    storage.sync[key] = async function(_) {
+      let request = await API.getRhymes(params);
+
+      storage.save({
+        key: key,
+        rawData: request.body,
+        expires: Durations.HOUR
+      });
+
+      return request.body;
+    };
+
+    return storage.load({
+      key: key
+    });
+  },
   async loadCurrentUserRaps(params) {
     let key = 'currentUserRaps/' + qs.stringify(params);
-    let userSession = await this.getUserSession();
-    Object.assign(params, userSession);
 
     storage.sync[key] = async function(data) {
       let request = await API.getUserRaps(params);
