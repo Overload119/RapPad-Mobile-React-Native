@@ -22,21 +22,36 @@ class Dashboard extends React.Component {
     super(props)
     this.state = {
       isLoading: true,
-      raps: []
+      raps: [],
+      localRaps: []
     }
   }
   componentDidMount() {
     this.loadRaps();
   }
   async loadRaps() {
+    this.setState({ isLoading: true });
     try {
       let result = await RPStorage.loadCurrentUserRaps({
         limit: 10,
         offset: 0
       });
-      this.setState({ raps: result, isLoading: false });
+      this.setState({ raps: result });
     } catch (error) {
+      // Not found.
     }
+
+    try {
+      let result = await RPStorage.loadLocalRaps();
+      this.setState({ localRaps: result });
+    } catch (error) {
+      // Not found.
+    }
+
+    this.setState({ isLoading: false });
+  }
+  handleOnRefresh() {
+    this.loadRaps();
   }
   handlePressNew() {
     let rap = {
@@ -76,14 +91,44 @@ class Dashboard extends React.Component {
       <Text style={styles.loader}>Loading...</Text>
     )
   }
+  renderLocalRaps() {
+    if (this.state.localRaps.length === 0) {
+      return null;
+    }
+
+    return (
+      <View>
+        <View style={GlobalStyles.row}>
+          <Text style={[GlobalStyles.smallText, styles.label]}>
+            YOUR RAPS (SAVED ON PHONE ONLY)
+          </Text>
+        </View>
+        {this.state.isLoading ?
+          this.renderLoader() :
+          this.state.localRaps.map(this.renderRapRow.bind(this))}
+      </View>
+    )
+  }
   render() {
     return (
-      <ScrollView style={styles.container}>
+      <ScrollView
+        refreshControl={
+          <RefreshControl
+            refreshing={this.state.isLoading}
+            onRefresh={this.handleOnRefresh.bind(this)}
+            title="Loading..."
+            progressBackgroundColor={COLORS.WHITE}
+            tintColor={COLORS.WHITE}
+          />
+        }
+        style={styles.container}>
+        {this.renderLocalRaps()}
         <View style={GlobalStyles.row}>
           <Text style={[GlobalStyles.smallText, styles.label]}>
             YOUR RAPS
           </Text>
           <RPLink
+            onPress={this.handlePressNew.bind(this)}
             style={[
               GlobalStyles.marginVert,
               GlobalStyles.smallText,

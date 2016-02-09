@@ -1,6 +1,7 @@
 import React, {Alert} from 'react-native';
 import Storage from 'react-native-storage';
 import qs from 'qs';
+import uuid from 'uuid';
 
 import API from './API'
 
@@ -15,6 +16,9 @@ let storage = new Storage({
   defaultExpires: Durations.DAY, // 1 day
   sync: {}
 });
+
+const LOCAL_RAPS_KEY = 'localRaps/v4';
+const SERVER_RAPS_KEY = '';
 
 export default RPStorage = {
   setUserSession(data) {
@@ -53,10 +57,43 @@ export default RPStorage = {
       key: key
     });
   },
+  async saveLocalRap(params) {
+    let localRaps;
+
+    try {
+      localRaps = await storage.load({
+        key: LOCAL_RAPS_KEY
+      });
+    } catch(err) {
+      console.warn('Failed to load %s', LOCAL_RAPS_KEY);
+      localRaps = [];
+    }
+
+    isUpdate = false;
+    for (let ii = 0; ii < localRaps.length; ii++) {
+      if (localRaps[ii].id === params.rap.id) {
+        // Update the rap.
+        Object.assign(localRaps[ii], params.rap);
+        isUpdate = true;
+        console.info('Updated rap %s', localRaps[ii].title);
+        break;
+      }
+    }
+
+    if (!isUpdate) {
+      localRaps.push(params.rap);
+      console.info('Appending new rap, "%s"', params.rap.title);
+    }
+
+    return storage.save({
+      key: LOCAL_RAPS_KEY,
+      rawData: localRaps,
+      expires: null
+    });
+  },
   async loadLocalRaps(params) {
-    let key = 'currentUserLocalRaps/' + qs.stringify(params);
     return storage.load({
-      key: key
+      key: LOCAL_RAPS_KEY
     });
   },
   async loadRap(params) {

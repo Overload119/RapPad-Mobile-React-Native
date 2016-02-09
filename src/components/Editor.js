@@ -3,6 +3,7 @@ import React, {
   ScrollView, NetInfo
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import uuid from 'uuid';
 
 import Home from './Home';
 import Launch from './Launch';
@@ -24,7 +25,10 @@ export default class Editor extends Component {
       showRhymes: true,
       rhymeResult: [],
       rhymeWord: '',
-      isConnected: false
+      isLoadingRhymes: false,
+      isConnected: false,
+      isSaving: false,
+      errorMessage: '',
     }
   }
   componentWillUnmount() {
@@ -57,7 +61,7 @@ export default class Editor extends Component {
     )
   }
   handleConnectivityChange(isConnected) {
-    this.setState({ isConnected: isConnected });
+    this.setState({ isConnected: false });
   }
   handleChangeTitle(text) {
     this.setState((prevState) => {
@@ -74,8 +78,13 @@ export default class Editor extends Component {
       return;
     }
 
+    this.setState({ isLoadingRhymes: true });
     let rhymes = await RPStorage.getRhymes({ term: lastWord });
-    this.setState({ rhymeResult: rhymes, rhymeWord: lastWord });
+    this.setState({
+      rhymeResult: rhymes,
+      rhymeWord: lastWord ,
+      isLoadingRhymes: true
+    });
   }
   handleChangeLyrics(text) {
     if (this.rhymeTimer != null) {
@@ -95,6 +104,43 @@ export default class Editor extends Component {
   }
   handlePressBack() {
     this.props.navigator.pop();
+  }
+  async handlePressSave() {
+    let isNew = this.state.rap.id == null;
+    let rapData = {};
+
+    Object.assign(rapData, this.state.rap);
+
+    if (this.state.isConnected) {
+      return;
+    }
+
+    if (isNew) {
+      rapData.id = uuid.v1();
+    }
+
+    this.setState({ isSaving: true });
+    try {
+      await RPStorage.saveLocalRap({ rap: rapData });
+      this.setState({
+        rap: rapData,
+        isSaving: false
+      }, this.showSuccessSave);
+    }
+    catch(error) {
+      this.setState({
+        errorMessage: 'Could not save.' ,
+        isSaving: false
+      });
+    }
+  }
+  showSuccessSave() {
+    if (this.state.isConnected) {
+      Alert.alert('Your changes were synced to RapPad.');
+      return;
+    }
+
+    Alert.alert('Your changes were saved to your phone.');
   }
   renderRhymeSuggestions() {
     if (this.state.rhymeResult.length > 0) {
@@ -142,10 +188,11 @@ export default class Editor extends Component {
   render() {
     let connectionBar = null;
     let backButtonIOS = null;
+    let errorMessage = null;
     if (!this.state.isConnected) {
       connectionBar = (
         <Text style={styles.connectionBar}>
-          No Internet detected. Changes will be local only.
+          No Internet detected. Changes will save to phone.
         </Text>
       )
     }
@@ -162,6 +209,14 @@ export default class Editor extends Component {
       )
     }
 
+    if (this.state.errorMessage) {
+      errorMessage = (
+        <Text style={styles.connectionBar}>
+          {this.state.errorMessage}
+        </Text>
+      );
+    }
+
     return (
       <View style={{flex: 1}}>
         <View style={styles.topBar}>
@@ -172,7 +227,9 @@ export default class Editor extends Component {
             value={this.state.rap.title}
           />
           <RPButton
-            style={styles.saveButton}>
+            style={styles.saveButton}
+            disabled={this.state.isSaving}
+            onPress={this.handlePressSave.bind(this)}>
             <Text style={[styles.saveButtonText]}>
               Save
             </Text>
@@ -180,6 +237,7 @@ export default class Editor extends Component {
         </View>
         <View style={GlobalStyles.divider} />
         {connectionBar}
+        {errorMessage}
         <RPTextInput
           onChangeText={this.handleChangeLyrics.bind(this)}
           style={styles.lyrics}
