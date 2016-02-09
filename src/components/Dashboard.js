@@ -48,6 +48,7 @@ class Dashboard extends React.Component {
       // Not found.
     }
 
+    console.log('Dashboard loading raps...');
     this.setState({ isLoading: false });
   }
   handleOnRefresh() {
@@ -58,12 +59,12 @@ class Dashboard extends React.Component {
       title: 'Untitled Rap',
       lyrics: ''
     }
-    this.props.navigator.push(RPRouter.getEditorRoute(rap));
+    this.props.navigator.push(RPRouter.getEditorRoute(rap, this));
   }
   handlePressRap(rap) {
     let clonedRap = {};
     Object.assign(clonedRap, rap)
-    this.props.navigator.push(RPRouter.getEditorRoute(clonedRap));
+    this.props.navigator.push(RPRouter.getEditorRoute(clonedRap, this));
   }
   renderRapRow(rap) {
     return (
@@ -118,6 +119,7 @@ class Dashboard extends React.Component {
             onRefresh={this.handleOnRefresh.bind(this)}
             title="Loading..."
             progressBackgroundColor={COLORS.WHITE}
+            colors={[COLORS.WHITE]}
             tintColor={COLORS.WHITE}
           />
         }

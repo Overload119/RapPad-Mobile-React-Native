@@ -45,7 +45,7 @@ export default class Editor extends Component {
     if (Platform.OS === 'android') {
       BackAndroid.addEventListener('hardwareBackPress', () => {
         BackAndroid.removeEventListener('hardwareBackPress');
-        this.props.navigator.pop();
+        this.handlePressBack();
         return true;
       });
       return false;
@@ -61,7 +61,7 @@ export default class Editor extends Component {
     )
   }
   handleConnectivityChange(isConnected) {
-    this.setState({ isConnected: false });
+    this.setState({ isConnected: isConnected });
   }
   handleChangeTitle(text) {
     this.setState((prevState) => {
@@ -103,20 +103,52 @@ export default class Editor extends Component {
     });
   }
   handlePressBack() {
+    this.props.dashboard.loadRaps();
     this.props.navigator.pop();
+  }
+  validate() {
+    if (this.state.rap.lyrics.length <= 0) {
+      this.setState({ validationMessage: 'Please add some lyrics.' });
+      return false;
+    }
+    if (this.state.rap.title.length <= 0) {
+      this.setState({ validationMessage: 'Please add a title.' });
+      return false;
+    }
+    this.setState({ validationMessage: null });
+    return true;
   }
   async handlePressSave() {
     let isNew = this.state.rap.id == null;
     let rapData = {};
 
+    if (!this.validate()) {
+      return;
+    }
+
     Object.assign(rapData, this.state.rap);
 
     if (this.state.isConnected) {
+      this.setState({ isSaving: true });
+      try {
+        await RPStorage.saveRap({ rap: rapData });
+        this.setState({
+          rap: rapData,
+          isSaving: false
+        }, this.showSuccessSave);
+      }
+      catch (error) {
+        this.setState({
+          errorMessage: 'Could not save. Try again later.' ,
+          isSaving: false
+        });
+      }
       return;
     }
 
     if (isNew) {
       rapData.id = uuid.v1();
+      rapData.isLocal = true;
     }
 
     this.setState({ isSaving: true });
@@ -127,7 +159,7 @@ export default class Editor extends Component {
         isSaving: false
       }, this.showSuccessSave);
     }
-    catch(error) {
+    catch (error) {
       this.setState({
         errorMessage: 'Could not save.' ,
         isSaving: false
@@ -135,6 +167,8 @@ export default class Editor extends Component {
     }
   }
   showSuccessSave() {
+    this.props.dashboard.loadRaps();
+
     if (this.state.isConnected) {
       Alert.alert('Your changes were synced to RapPad.');
       return;
@@ -189,9 +223,11 @@ export default class Editor extends Component {
     let connectionBar = null;
     let backButtonIOS = null;
     let errorMessage = null;
+    let validationMessage = null;
+
     if (!this.state.isConnected) {
       connectionBar = (
-        <Text style={styles.connectionBar}>
+        <Text style={styles.errorBar}>
           No Internet detected. Changes will save to phone.
         </Text>
       )
@@ -211,8 +247,16 @@ export default class Editor extends Component {
 
     if (this.state.errorMessage) {
       errorMessage = (
-        <Text style={styles.connectionBar}>
+        <Text style={styles.errorBar}>
           {this.state.errorMessage}
+        </Text>
+      );
+    }
+
+    if (this.state.validationMessage) {
+      validationMessage = (
+        <Text style={styles.errorBar}>
+          {this.state.validationMessage}
         </Text>
       );
     }
@@ -237,6 +281,7 @@ export default class Editor extends Component {
         </View>
         <View style={GlobalStyles.divider} />
         {connectionBar}
+        {validationMessage}
         {errorMessage}
         <RPTextInput
           onChangeText={this.handleChangeLyrics.bind(this)}
@@ -252,7 +297,7 @@ export default class Editor extends Component {
 }
 
 const styles = StyleSheet.create({
-  connectionBar: {
+  errorBar: {
     paddingTop: 8,
     paddingBottom: 8,
     backgroundColor: COLORS.RED,

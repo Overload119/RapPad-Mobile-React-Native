@@ -17,8 +17,7 @@ let storage = new Storage({
   sync: {}
 });
 
-const LOCAL_RAPS_KEY = 'localRaps/v4';
-const SERVER_RAPS_KEY = '';
+const LOCAL_RAPS_KEY = 'localRaps/v5';
 
 export default RPStorage = {
   setUserSession(data) {
@@ -57,6 +56,26 @@ export default RPStorage = {
       key: key
     });
   },
+  async saveRap(params) {
+    let isLocal = !!params.rap.isLocal;
+    let rapId = params.rap.id;
+
+    // If it has no ID, then it's a new rap.
+    // If it's a new rap being pushed to the server, we set it to private.
+    if (!rapId && !isLocal) {
+      params.rap.visibility = 'private';
+    }
+
+    let request = await API.saveRap(params);
+
+    if (request.response.status === 200 && isLocal) {
+      // Remove the local rap, since we preserved it on the server.
+      await this.deleteLocalRap(rapId);
+    }
+
+    // Update the local cache.
+    return request.body;
+  },
   async saveLocalRap(params) {
     let localRaps;
 
@@ -91,16 +110,33 @@ export default RPStorage = {
       expires: null
     });
   },
-  async loadLocalRaps(params) {
+  async deleteLocalRap(rapId) {
+    localRaps = await this.loadLocalRaps();
+    nextLocalRaps = []
+    for (let ii = 0; ii < localRaps.length; ii++) {
+      if (localRaps[ii].id === rapId) {
+        console.info('Remove rap %s from array', localRaps[ii].title);
+        continue;
+      }
+      nextLocalRaps.push(localRaps[ii]);
+    }
+
+    return storage.save({
+      key: LOCAL_RAPS_KEY,
+      rawData: nextLocalRaps,
+      expires: null
+    });
+  },
+  loadLocalRaps() {
     return storage.load({
       key: LOCAL_RAPS_KEY
     });
   },
-  async loadRap(params) {
+  loadRap(params) {
     let key = 'rap/' + qs.stringify(params);
   },
   async loadCurrentUserRaps(params) {
-    let key = 'currentUserRaps/' + qs.stringify(params);
+    let key = `currentUserRaps/v2/${qs.stringify(params)}`;
 
     storage.sync[key] = async function(data) {
       let request = await API.getUserRaps(params);
@@ -108,7 +144,7 @@ export default RPStorage = {
       storage.save({
         key: key,
         rawData: request.body,
-        expires: Durations.HOUR
+        expires: 0
       });
 
       return request.body;

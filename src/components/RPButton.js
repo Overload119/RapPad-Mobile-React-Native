@@ -16,8 +16,9 @@ class RPButton extends React.Component {
     }
 
     let styleByProps = {
-      opacity: this.props.disabled ? 0.5 : 1,
-      backgroundColor: this.props.color || COLORS.PURPLE
+      backgroundColor: this.props.disabled ?
+        COLORS.GRAY :
+        this.props.color || COLORS.PURPLE
     };
 
     return (
