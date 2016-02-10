@@ -1,6 +1,6 @@
 import React, {
   Component, TextInput, StyleSheet, Text, View, Alert, BackAndroid, Platform,
-  ScrollView, NetInfo
+  ScrollView, NetInfo, TouchableWithoutFeedback, Animated, Dimensions
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import uuid from 'uuid';
@@ -16,6 +16,12 @@ import RPLink from './RPLink';
 import {COLORS} from '../constants/Colors';
 import {GlobalStyles} from '../constants/GlobalStyles';
 
+let deviceWidth = Dimensions.get('window').width;
+let deviceHeight = Dimensions.get('window').height;
+
+let RHYME_BOX_HEIGHT = deviceHeight * 0.25;
+let RHYME_BOX_COLLAPSED_HEIGHT = 50;
+
 export default class Editor extends Component {
   constructor(props, context) {
     super(props, context);
@@ -29,6 +35,7 @@ export default class Editor extends Component {
       isConnected: false,
       isSaving: false,
       errorMessage: '',
+      rhymeBoxHeight: new Animated.Value(RHYME_BOX_HEIGHT),
     }
   }
   componentWillUnmount() {
@@ -74,7 +81,7 @@ export default class Editor extends Component {
     let wordCandidates = lastLine.split(' ');
     let lastWord = wordCandidates.pop().trim();
 
-    if (!lastWord || lastWord === '') {
+    if (!lastWord || lastWord === '' || !this.state.showRhymes) {
       return;
     }
 
@@ -82,7 +89,7 @@ export default class Editor extends Component {
     let rhymes = await RPStorage.getRhymes({ term: lastWord });
     this.setState({
       rhymeResult: rhymes,
-      rhymeWord: lastWord ,
+      rhymeWord: lastWord,
       isLoadingRhymes: true
     });
   }
@@ -105,6 +112,32 @@ export default class Editor extends Component {
   handlePressBack() {
     this.props.dashboard.loadRaps();
     this.props.navigator.pop();
+  }
+  handlePressToggleRhymes() {
+    this.setState((prevState) => {
+      return { showRhymes: !prevState.showRhymes };
+    }, this.animateRhymeBox);
+  }
+  animateRhymeBox() {
+    if (this.state.showRhymes) {
+      this.performRhymeRequest();
+      Animated.spring(
+        this.state.rhymeBoxHeight,
+        {
+          toValue: RHYME_BOX_HEIGHT,
+          friction: 6,
+        }
+      ).start();
+      return;
+    }
+
+    Animated.spring(
+      this.state.rhymeBoxHeight,
+      {
+        toValue: RHYME_BOX_COLLAPSED_HEIGHT,
+        friction: 6,
+      }
+    ).start();
   }
   validate() {
     if (this.state.rap.lyrics.length <= 0) {
@@ -181,13 +214,18 @@ export default class Editor extends Component {
       return (
         <ScrollView>
           <Text style={[GlobalStyles.white, GlobalStyles.smallText]}>
-            {this.state.rhymeResult.map((x) => { return x.word_str }).join(', ')}
+            {this.state.rhymeResult.map ((x) => { return x.word_str }).join(', ')}
           </Text>
         </ScrollView>
       );
     }
 
     if (this.state.rhymeResult.length === 0 && this.state.rhymeWord !== '') {
+      return (
+        <Text style={GlobalStyles.white}>
+          This word was not found in our rhyming dictionary.
+        </Text>
+      )
     }
 
     return (
@@ -198,25 +236,39 @@ export default class Editor extends Component {
     )
   }
   renderRhymeBox() {
-    if (!this.state.showRhymes) {
-      return null;
-    }
+    let animStyle = {};
+    let truncatedWord = this.state.rhymeWord.length > 15 ?
+      `${this.state.rhymeWord.substring(0, 15).toUpperCase()}...` :
+      this.state.rhymeWord.toUpperCase()
 
     headerText =
       this.state.rhymeWord === '' ?
       'RHYME SUGGESTIONS' :
-      `RHYME SUGGESTIONS FOR "${this.state.rhymeWord.toUpperCase()}"`;
+      `RHYME SUGGESTIONS FOR "${truncatedWord}"`;
+    if (!this.state.showRhymes) {
+      headerText = 'CLICK TO ENABLE RHYME SUGGESTIONS';
+    }
+
+    animStyle = {
+      height: this.state.rhymeBoxHeight
+    };
 
     return (
-      <View style={styles.rhymeBox}>
-        <Text style={[
-          GlobalStyles.marginBottom,
-          GlobalStyles.white
-          ]}>
-          {headerText}
-        </Text>
-        {this.renderRhymeSuggestions()}
-      </View>
+      <Animated.View style={[styles.rhymeBox, animStyle]}>
+        <TouchableWithoutFeedback
+          onPress={this.handlePressToggleRhymes.bind(this)}>
+          <Text style={[GlobalStyles.marginBottom, GlobalStyles.white]}>
+            {headerText}
+            {' '}
+            <Icon
+              name={this.state.showRhymes ? 'chevron-down' : 'chevron-up'}
+              size={20}
+              color={COLORS.WHITE}
+            />
+          </Text>
+        </TouchableWithoutFeedback>
+        {this.state.showRhymes ? this.renderRhymeSuggestions() : null}
+      </Animated.View>
     );
   }
   render() {
@@ -337,7 +389,7 @@ const styles = StyleSheet.create({
     padding: 8
   },
   rhymeBox: {
-    flex: 0.5,
+    height: RHYME_BOX_HEIGHT,
     padding: 12,
     backgroundColor: COLORS.BLUE,
   }
