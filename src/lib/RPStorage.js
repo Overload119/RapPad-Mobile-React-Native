@@ -18,11 +18,12 @@ let storage = new Storage({
 });
 
 const LOCAL_RAPS_KEY = 'localRaps/v5';
+const USER_SESSION_KEY = 'userSession/v1'
 
 export default RPStorage = {
   setUserSession(data) {
     return storage.save({
-      key: 'userSession',
+      key: USER_SESSION_KEY,
       rawData: {
         user_token: data.auth_token,
         user_email: data.email
@@ -33,7 +34,7 @@ export default RPStorage = {
   getUserSession() {
     // Never expires.
     return storage.load({
-      key: 'userSession',
+      key: USER_SESSION_KEY,
       autoSync: false
     })
   },
