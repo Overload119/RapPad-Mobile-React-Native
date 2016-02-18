@@ -1,4 +1,7 @@
 import React, {View, StyleSheet, Text, Alert} from 'react-native';
+import FBLogin from 'react-native-facebook-login';
+import NativeModules, {FBLoginManager} from 'NativeModules';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 import API from '../lib/API';
 import RPButton from './RPButton'
@@ -14,7 +17,8 @@ class Login extends React.Component {
     this.state = {
       login: '',
       password: '',
-      isLoading: false
+      isLoading: false,
+      error: '',
     }
   }
   async requestLogin() {
@@ -55,6 +59,55 @@ class Login extends React.Component {
   handlePressGoBack() {
     this.props.navigator.pop();
   }
+  async loginWithFacebook() {
+    // TODO change this for Android.
+    let userId = this.fbAuth.userId;
+    let token = this.fbAuth.token;
+    let profileApi = 'https://graph.facebook.com/v2.3/' +
+      `${userId}?fields=email&redirect=false&access_token=${token}`
+
+    var data;
+    try {
+      let response = await fetch(profileApi);
+      data = await response.json();
+      if (!data.email) {
+        throw Error('Incorrect response');
+      }
+    }
+    catch (ex) {
+      this.setState({ error: 'Could not authenticate with Facebook.' });
+      console.error(ex);
+    }
+
+    try {
+      let request = await API.fbLogin({
+        uid: userId,
+        token: token,
+        email: data.email,
+      });
+      if (request.response.status === 200) {
+        await RPStorage.setUserSession(request.body);
+        this.props.navigator.push(RPRouter.getHomeRoute());
+        return;
+      }
+
+      this.setState({ error: 'Could not authenticate with Facebook' });
+    }
+    catch (ex) {
+      this.setState({ error: 'Could not authenticate with Facebook' });
+      console.error(ex);
+    }
+  }
+  handlePressFBLogin() {
+    FBLoginManager.loginWithPermissions(['email'], (err, data) => {
+      if (err) {
+        this.setState({ error: 'Could not authenticate with Facebook.' });
+        return;
+      }
+      this.fbAuth = data.credentials
+      this.loginWithFacebook();
+    });
+  }
   render() {
     let errorText = null;
     if (this.state.error) {
@@ -87,9 +140,11 @@ class Login extends React.Component {
           <RPButton
             style={[styles.loginButton, styles.loginButtonRight]}
             color={COLORS.BLUE}
+            onPress={this.handlePressFBLogin.bind(this)}
             disabled={this.state.isLoading}>
             <Text style={{color: COLORS.WHITE}}>
-              Login
+              <Icon name="facebook-official" size={14} color={COLORS.WHITE} />
+              {' '}Instant Login
             </Text>
           </RPButton>
         </View>

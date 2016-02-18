@@ -230,8 +230,7 @@ export default class Editor extends Component {
 
     return (
       <Text style={GlobalStyles.white}>
-        Highlight any word to have rhymes appear for it.
-        Or, the last word will automatically be looked up.
+        We'll lookup rhymes for the last word you put in the box above.
       </Text>
     )
   }

@@ -16,6 +16,15 @@ const api = new Frisbee({
 // auth endpoints.
 
 export default API = {
+  fbLogin(data) {
+    return api.post('/sessions/facebook_auth', {
+      body: JSON.stringify({
+        uid: data.uid,
+        token: data.token,
+        email: data.email,
+      })
+    });
+  },
   login(data) {
     return api.post('/sessions/sign_in', {
       body: JSON.stringify({
