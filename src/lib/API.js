@@ -37,8 +37,36 @@ export default API = {
     return api.get(path);
   },
   getRhymes(params = {}) {
-    path = '/freestyle/rhymes?' + qs.stringify(params, { encode: true });
+    let path = '/freestyle/rhymes?' + qs.stringify(params, { encode: true });
     console.log(path);
     return api.get(path);
+  },
+  async saveRap(params) {
+    let userSession = await RPStorage.getUserSession();
+    let path = '/raps?' + qs.stringify(userSession, { encode: false });
+
+    if (params.rap.isLocal) {
+      // If we're going from local to web, we have to setup some defaults
+      // and remove local-only attributes from the rap.
+      delete params.rap.id;
+      delete params.rap.isLocal;
+      params.rap.visibility = 'private';
+    }
+
+    // Update an existing rap
+    if (params.rap.id) {
+      path = '/raps/' +
+        params.rap.id +
+        '?' +
+        qs.stringify(userSession, { encode: false });
+      return api.put(path, {
+        body: JSON.stringify(params.rap)
+      });
+    }
+
+    // Create a new rap
+    return api.post(path, {
+      body: JSON.stringify(params.rap)
+    });
   }
 };

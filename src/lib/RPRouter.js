@@ -26,11 +26,11 @@ let RPRouter = {
       }
     };
   },
-  getEditorRoute(rap) {
+  getEditorRoute(rap, dashboard) {
     return {
       renderScene(navigator) {
         let Editor = require('../components/Editor');
-        return <Editor navigator={navigator} rap={rap} />;
+        return <Editor navigator={navigator} rap={rap} dashboard={dashboard}/>;
       }
     }
   },
@@ -38,13 +38,6 @@ let RPRouter = {
     return {
       getSceneClass() {
         return require('../components/Home');
-      }
-    };
-  },
-  getDashboardRoute() {
-    return {
-      getSceneClass() {
-        return require('../components/Dashboard');
       }
     };
   }
