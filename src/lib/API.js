@@ -21,6 +21,14 @@ export default API = {
       })
     });
   },
+  register(data) {
+    return api.post('/sessions/sign_up', {
+      body: JSON.stringify({
+        email: data.email,
+        password: data.password
+      })
+    });
+  },
   getUserRaps(params) {
     path = '/raps?' + qs.stringify(params, { encode: false });
     return api.get(path);
