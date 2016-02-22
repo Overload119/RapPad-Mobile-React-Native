@@ -54,17 +54,19 @@ export default class Home extends React.Component {
   }
   render() {
     return (
+      <Dashboard navigator={this.props.navigator} />
+      /* Bring this back later.
       <View style={styles.home}>
         {this.renderTabs()}
         <ViewPagerAndroid
           style={styles.viewPager}
           ref={viewPager => { this.viewPager = viewPager; }}
           onPageSelected={this.handleTabSelect.bind(this)}>
-          <Dashboard navigator={this.props.navigator} />
           <View><Text>Tab2</Text></View>
           <Forum />
         </ViewPagerAndroid>
       </View>
+      */
     );
   }
 }

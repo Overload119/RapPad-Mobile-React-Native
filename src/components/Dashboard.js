@@ -33,7 +33,7 @@ class Dashboard extends React.Component {
     this.setState({ isLoading: true });
     try {
       let result = await RPStorage.loadCurrentUserRaps({
-        limit: 10,
+        limit: 14,
         offset: 0
       });
       this.setState({ raps: result });

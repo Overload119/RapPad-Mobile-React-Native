@@ -1,4 +1,4 @@
-import React, {View, StyleSheet, Text, Alert} from 'react-native';
+import React, {View, StyleSheet, Text, Alert, Platform} from 'react-native';
 import FBLogin from 'react-native-facebook-login';
 import NativeModules, {FBLoginManager} from 'NativeModules';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -60,7 +60,6 @@ class Login extends React.Component {
     this.props.navigator.pop();
   }
   async loginWithFacebook() {
-    // TODO change this for Android.
     let userId = this.fbAuth.userId;
     let token = this.fbAuth.token;
     let profileApi = 'https://graph.facebook.com/v2.3/' +
@@ -104,7 +103,16 @@ class Login extends React.Component {
         this.setState({ error: 'Could not authenticate with Facebook.' });
         return;
       }
-      this.fbAuth = data.credentials
+      if (Platform.OS === 'android') {
+        // Android gives the info in data.profile, but it's a string.
+        let androidData = JSON.parse(data.profile);
+        this.fbAuth = {
+          userId: androidData.id,
+          token: data.token,
+        }
+      } else {
+        this.fbAuth = data.credentials;
+      }
       this.loginWithFacebook();
     });
   }
