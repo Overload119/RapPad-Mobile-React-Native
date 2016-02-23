@@ -32,7 +32,7 @@ class Launch extends React.Component {
       Animated.timing(this.state.opacityValue, { duration: 1000, toValue: 1 }),
       Animated.timing(
         this.state.bottomYOffsetValue,
-        { duration: 1000, toValue: 0 }
+        { duration: 1000, toValue: 20 }
       ),
     ]).start();
   }

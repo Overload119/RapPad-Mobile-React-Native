@@ -35,6 +35,8 @@ export default class Home extends React.Component {
   }
   render() {
     return (
+      <Dashboard navigator={this.props.navigator} />
+      /* In version 1.0 we won't have these options.
       <TabBarIOS
         translucent={true}
         barTintColor={COLORS.BASE}
@@ -61,6 +63,7 @@ export default class Home extends React.Component {
           <Forum />
         </TabBarIOS.Item>
       </TabBarIOS>
+      */
     );
   }
 }

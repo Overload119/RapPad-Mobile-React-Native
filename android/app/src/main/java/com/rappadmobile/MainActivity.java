@@ -5,6 +5,8 @@ import com.oblador.vectoricons.VectorIconsPackage;
 import com.xebia.reactnative.TabLayoutPackage;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
+import com.magus.fblogin.FacebookLoginPackage;
+import com.facebook.FacebookSdk;
 
 import java.util.Arrays;
 import java.util.List;
@@ -38,7 +40,8 @@ public class MainActivity extends ReactActivity {
       return Arrays.<ReactPackage>asList(
         new MainReactPackage(),
         new VectorIconsPackage(),
-        new TabLayoutPackage()
+        new TabLayoutPackage(),
+        new FacebookLoginPackage()
       );
     }
 }
